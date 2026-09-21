@@ -19,14 +19,20 @@
   <div class="wrap header-inner">
     <a href="#inicio" class="logo">Iree</a>
     <nav class="nav" id="nav">
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a>
+      <a href="#proyectos" data-i18n="nav_projects">Proyectos</a>
+      <a href="#habilidades" data-i18n="nav_skills">Habilidades</a>
+      <a href="#contacto" data-i18n="nav_contact">Contacto</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-controls">
+      <div class="lang-switch" id="langSwitch" role="group" aria-label="Idioma">
+        <button type="button" class="lang-btn active" data-lang="es">ES</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -36,21 +42,20 @@
   <section id="inicio" class="hero">
     <div class="wrap hero-grid">
       <div class="hero-text">
-        <p class="hero-kicker">Desarrolladora de videojuegos · Unity</p>
-        <h1>
+        <p class="hero-kicker" data-i18n="hero_kicker">Desarrolladora de videojuegos · Unity</p>
+        <h1 data-i18n-html="hero_title">
           Construyo mundos
           <span class="hero-highlight">jugables</span>
           desde Córdoba
         </h1>
-        <p class="hero-lede">
-          <!-- PLACEHOLDER: cambia esta frase por tu propia bio corta -->
+        <p class="hero-lede" data-i18n="hero_lede">
           Estudiante y desarrolladora en Unity. Me muevo entre el terror en primera persona
           y la vida tranquila de un pueblo lleno de monstruos — y disfruto igual programando
           la IA de un enemigo que el sistema de cariño de una mascota.
         </p>
         <div class="hero-actions">
-          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-          <a href="#contacto" class="btn btn-ghost">Hablemos</a>
+          <a href="#proyectos" class="btn btn-primary" data-i18n="btn_projects">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost" data-i18n="btn_contact">Hablemos</a>
         </div>
       </div>
 
@@ -76,28 +81,27 @@
       <div class="about-portrait" aria-hidden="true">
         <div class="portrait-frame">
           <!-- PLACEHOLDER: sustituye por tu foto o avatar -->
-          <span>Tu foto aquí</span>
+          <span data-i18n="about_photo_placeholder">Tu foto aquí</span>
         </div>
       </div>
       <div class="about-copy">
-        <p class="section-kicker">Sobre mí</p>
-        <h2>De clase de diseño a la sala de máquinas del motor</h2>
-        <p>
-          <!-- PLACEHOLDER: cuenta tu historia real aquí -->
+        <p class="section-kicker" data-i18n="about_kicker">Sobre mí</p>
+        <h2 data-i18n="about_title">De clase de diseño a la sala de máquinas del motor</h2>
+        <p data-i18n="about_p1">
           Combino proyectos en solitario con trabajo en equipo dentro de mis estudios.
           Me interesa especialmente la arquitectura del código tanto como el diseño del juego:
           máquinas de estados, eventos desacoplados y sistemas que un equipo entero pueda
           entender y ampliar sin miedo a romper nada.
         </p>
-        <p>
+        <p data-i18n="about_p2">
           Cuando no estoy dentro del editor de Unity, suelo estar pensando en la narrativa
           de mi próximo proyecto o revisando cómo otros juegos resuelven un problema que
           tengo entre manos.
         </p>
         <ul class="about-facts">
-          <li><strong>Motor</strong><span>Unity 6 (HDRP / URP)</span></li>
-          <li><strong>Lenguaje</strong><span>C#</span></li>
-          <li><strong>Formación</strong><span>Estudiante de desarrollo de videojuegos</span></li>
+          <li><strong data-i18n="about_fact_engine_label">Motor</strong><span>Unity 6 (HDRP / URP)</span></li>
+          <li><strong data-i18n="about_fact_lang_label">Lenguaje</strong><span>C#</span></li>
+          <li><strong data-i18n="about_fact_edu_label">Formación</strong><span data-i18n="about_fact_edu_value">Estudiante de desarrollo de videojuegos</span></li>
         </ul>
       </div>
     </div>
@@ -106,104 +110,19 @@
   <!-- PROYECTOS -->
   <section id="proyectos" class="projects">
     <div class="wrap">
-      <p class="section-kicker">Proyectos</p>
-      <h2>Lo que he construido</h2>
-      <p class="section-lede">
-        <!-- PLACEHOLDER: intro corta a la sección --></br>
-        Una selección de proyectos, en solitario y en equipo. Sustituye cada ficha por
-        tu propio juego: título, capturas, rol y enlace.
-      </p>
+      <p class="section-kicker" data-i18n="projects_kicker">Proyectos</p>
+      <h2 data-i18n="projects_title">Lo que he construido</h2>
+      <p class="section-lede" data-i18n="projects_lede">Una selección de proyectos en solitario y equipo.</p>
 
-      <div class="project-list">
+      <div class="project-list" id="projectGrid">
+        <!-- Las fichas de proyecto se generan desde script.js (array "projects") -->
+      </div>
 
-        <!-- Ficha de proyecto 1 -->
-        <article class="project project-a">
-          <div class="project-thumb placeholder-thumb thumb-1">
-            <span>Captura / GIF del proyecto</span>
-          </div>
-          <div class="project-copy">
-            <h3>[Nombre del proyecto]</h3>
-            <p>
-              <!-- PLACEHOLDER --> Una frase describiendo de qué trata el juego y qué lo
-              hace interesante para quien lo juega.
-            </p>
-            <ul class="project-tags">
-              <li>Unity</li>
-              <li>C#</li>
-              <li>[Tu rol]</li>
-            </ul>
-            <a href="#" class="project-link">Ver proyecto →</a>
-          </div>
-        </article>
-
-        <!-- Ficha de proyecto 2 -->
-        <article class="project project-b">
-          <div class="project-thumb placeholder-thumb thumb-2">
-            <span>Captura / GIF del proyecto</span>
-          </div>
-          <div class="project-copy">
-            <h3>[Nombre del proyecto]</h3>
-            <p>
-              <!-- PLACEHOLDER --> Una frase describiendo de qué trata el juego y qué lo
-              hace interesante para quien lo juega.
-            </p>
-            <ul class="project-tags">
-              <li>Unity</li>
-              <li>C#</li>
-              <li>[Tu rol]</li>
-            </ul>
-            <a href="#" class="project-link">Ver proyecto →</a>
-          </div>
-        </article>
-
-        <!-- Ficha de proyecto 3 -->
-        <article class="project project-a">
-          <div class="project-thumb placeholder-thumb thumb-3">
-            <span>Captura / GIF del proyecto</span>
-          </div>
-          <div class="project-copy">
-            <h3>[Nombre del proyecto]</h3>
-            <p>
-              <!-- PLACEHOLDER --> Una frase describiendo de qué trata el juego y qué lo
-              hace interesante para quien lo juega.
-            </p>
-            <ul class="project-tags">
-              <li>Unity</li>
-              <li>C#</li>
-              <li>[Tu rol]</li>
-            </ul>
-            <a href="#" class="project-link">Ver proyecto →</a>
-          </div>
-        </article>
-
-        <!-- Ficha de proyecto 4 -->
-        <article class="project project-b">
-          <div class="project-thumb placeholder-thumb thumb-4">
-            <span>Captura / GIF del proyecto</span>
-          </div>
-          <div class="project-copy">
-            <h3>[Nombre del proyecto]</h3>
-            <p>
-              <!-- PLACEHOLDER --> Una frase describiendo de qué trata el juego y qué lo
-              hace interesante para quien lo juega.
-            </p>
-            <ul class="project-tags">
-              <li>Unity</li>
-              <li>C#</li>
-              <li>[Tu rol]</li>
-            </ul>
-            <a href="#" class="project-link">Ver proyecto →</a>
-          </div>
-        </article>
-
-        <!-- Ficha "más proyectos en camino" -->
-        <article class="project project-future">
-          <div class="future-inner">
-            <p class="future-kicker">Próximamente</p>
-            <p>Nuevos proyectos en desarrollo. Vuelve pronto para verlos.</p>
-          </div>
-        </article>
-
+      <div class="project-future">
+        <div class="future-inner">
+          <p class="future-kicker" data-i18n="project_future_kicker">Próximamente</p>
+          <p data-i18n="project_future_text">Nuevos proyectos en desarrollo. Vuelve pronto para verlos.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -211,19 +130,19 @@
   <!-- HABILIDADES -->
   <section id="habilidades" class="skills">
     <div class="wrap">
-      <p class="section-kicker">Habilidades</p>
-      <h2>La caja de herramientas</h2>
+      <p class="section-kicker" data-i18n="skills_kicker">Habilidades</p>
+      <h2 data-i18n="skills_title">La caja de herramientas</h2>
 
       <div class="skills-grid">
         <div class="skill-group">
-          <h3>Lenguajes</h3>
+          <h3 data-i18n="skill_group_lang">Lenguajes</h3>
           <ul class="chip-list">
             <li>C#</li>
             <li>Shader Graph</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Motor y render</h3>
+          <h3 data-i18n="skill_group_engine">Motor y render</h3>
           <ul class="chip-list">
             <li>Unity 6</li>
             <li>HDRP</li>
@@ -232,19 +151,19 @@
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Arquitectura</h3>
+          <h3 data-i18n="skill_group_arch">Arquitectura</h3>
           <ul class="chip-list">
-            <li>Máquinas de estados (FSM)</li>
-            <li>Eventos desacoplados</li>
-            <li>Patrón Observer</li>
-            <li>Pooling de objetos</li>
+            <li data-i18n="skill_fsm">Máquinas de estados (FSM)</li>
+            <li data-i18n="skill_events">Eventos desacoplados</li>
+            <li data-i18n="skill_observer">Patrón Observer</li>
+            <li data-i18n="skill_pooling">Pooling de objetos</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Herramientas</h3>
+          <h3 data-i18n="skill_group_tools">Herramientas</h3>
           <ul class="chip-list">
             <li>Git</li>
-            <li>Trabajo en equipo</li>
+            <li data-i18n="skill_teamwork">Trabajo en equipo</li>
             <!-- PLACEHOLDER: añade Blender, Aseprite, etc. si usas más -->
           </ul>
         </div>
@@ -255,12 +174,9 @@
   <!-- CONTACTO -->
   <section id="contacto" class="contact">
     <div class="wrap contact-inner">
-      <p class="section-kicker">Contacto</p>
-      <h2>¿Hacemos algo juntos?</h2>
-      <p class="section-lede">
-        Abierta a colaboraciones, prácticas y proyectos en equipo.
-        <!-- PLACEHOLDER: adapta esta frase a lo que estés buscando -->
-      </p>
+      <p class="section-kicker" data-i18n="contact_kicker">Contacto</p>
+      <h2 data-i18n="contact_title">¿Hacemos algo juntos?</h2>
+      <p class="section-lede" data-i18n="contact_lede">Abierta a colaboraciones, prácticas y proyectos en equipo.</p>
       <div class="contact-links">
         <a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a>
         <a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a>
@@ -274,9 +190,52 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>© <span id="year"></span> Iree. Hecho con Unity, café y demasiadas ventanas de consola abiertas.</p>
+    <p>© <span id="year"></span> Iree. <span data-i18n="footer_text">Hecho con Unity, café y demasiadas ventanas de consola abiertas.</span></p>
   </div>
 </footer>
+
+<!-- MODAL DE PROYECTO -->
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" data-i18n-aria="modal_close" aria-label="Cerrar">×</button>
+
+    <div class="modal-carousel" id="modalCarousel">
+      <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior">‹</button>
+      <div class="carousel-track" id="carouselTrack"></div>
+      <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Siguiente">›</button>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+
+      <dl class="modal-meta">
+        <div>
+          <dt data-i18n="modal_date">Fecha</dt>
+          <dd id="modalDate"></dd>
+        </div>
+        <div>
+          <dt data-i18n="modal_studio">Estudio / equipo</dt>
+          <dd id="modalStudio"></dd>
+        </div>
+        <div>
+          <dt data-i18n="modal_role">Rol</dt>
+          <dd id="modalRole"></dd>
+        </div>
+      </dl>
+
+      <ul class="project-tags" id="modalTags"></ul>
+
+      <h4 data-i18n="modal_about">Sobre el juego</h4>
+      <p id="modalLongDesc"></p>
+
+      <h4 id="modalWorkLabel"></h4>
+      <p id="modalWorkDesc"></p>
+
+      <a id="modalLink" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="modal_try">Pruébalo</a>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>

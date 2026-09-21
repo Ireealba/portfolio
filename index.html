@@ -25,9 +25,20 @@
       <a href="#contacto" data-i18n="nav_contact">Contacto</a>
     </nav>
     <div class="header-controls">
-      <div class="lang-switch" id="langSwitch" role="group" aria-label="Idioma">
-        <button type="button" class="lang-btn active" data-lang="es">ES</button>
-        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <div class="lang-dropdown" id="langDropdown">
+        <button type="button" class="lang-dropdown-toggle" id="langToggle" aria-haspopup="listbox" aria-expanded="false">
+          <span class="lang-flag" id="langFlagCurrent">🇪🇸</span>
+          <span class="lang-code" id="langCodeCurrent">ES</span>
+          <span class="lang-caret" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox" hidden>
+          <li role="option" data-lang="es" aria-selected="true">
+            <span class="lang-flag">🇪🇸</span> Español
+          </li>
+          <li role="option" data-lang="en" aria-selected="false">
+            <span class="lang-flag">🇬🇧</span> English
+          </li>
+        </ul>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>

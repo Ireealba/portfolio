@@ -257,8 +257,14 @@ function applyI18n(lang) {
     if (dict[lang][key] !== undefined) el.setAttribute("aria-label", dict[lang][key]);
   });
 
-  document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.lang === lang);
+  const flags = { es: "🇪🇸", en: "🇬🇧" };
+  const langFlagCurrent = document.getElementById("langFlagCurrent");
+  const langCodeCurrent = document.getElementById("langCodeCurrent");
+  if (langFlagCurrent) langFlagCurrent.textContent = flags[lang];
+  if (langCodeCurrent) langCodeCurrent.textContent = lang.toUpperCase();
+
+  document.querySelectorAll("#langMenu li").forEach(li => {
+    li.setAttribute("aria-selected", String(li.dataset.lang === lang));
   });
 }
 
@@ -436,11 +442,41 @@ document.addEventListener("keydown", e => {
 });
 
 /* =========================================================
-   7) SELECTOR DE IDIOMA
+   7) SELECTOR DE IDIOMA (desplegable con banderas)
    ========================================================= */
-document.querySelectorAll(".lang-btn").forEach(btn => {
-  btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
-});
+const langToggle = document.getElementById("langToggle");
+const langMenu = document.getElementById("langMenu");
+const langDropdown = document.getElementById("langDropdown");
+
+function openLangMenu() {
+  langMenu.hidden = false;
+  langToggle.setAttribute("aria-expanded", "true");
+}
+function closeLangMenu() {
+  langMenu.hidden = true;
+  langToggle.setAttribute("aria-expanded", "false");
+}
+
+if (langToggle && langMenu) {
+  langToggle.addEventListener("click", () => {
+    langMenu.hidden ? openLangMenu() : closeLangMenu();
+  });
+
+  langMenu.querySelectorAll("li").forEach(li => {
+    li.addEventListener("click", () => {
+      setLanguage(li.dataset.lang);
+      closeLangMenu();
+    });
+  });
+
+  document.addEventListener("click", e => {
+    if (langDropdown && !langDropdown.contains(e.target)) closeLangMenu();
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeLangMenu();
+  });
+}
 
 /* =========================================================
    8) MENÚ MÓVIL
@@ -471,4 +507,5 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 /* =========================================================
    10) INICIALIZACIÓN
    ========================================================= */
+applyI18n(currentLang);
 renderProjects(currentLang);

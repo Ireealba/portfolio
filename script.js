@@ -148,41 +148,211 @@ const dict = {
      cada idioma.
    ========================================================= */
 const projects = [
-  {
-    id: "roborunner",
-    // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
-    cover: "img/roborunner/Roborunner0.png",
-    mode: "solo",          // "solo" | "team"
-    jam: false,
-    dateCreated: "12/2025",
-    dateUpdated: "12/2025",
-    studio: null,           // proyecto en solitario: no se muestra estudio/equipo
-    link: "https://raccoonindiegamedev.itch.io/roborunner",
-    tags: ["2D", "Endless runner"], // etiquetas propias del proyecto, además de las fijas
-    gallery: [
-      "img/roborunner/RoborunnerTrailer.mp4",
-      "img/roborunner/Roborunner1.png",
-      "img/roborunner/Roborunner2.png",
-      "img/roborunner/Roborunner3.png",
-      "img/roborunner/Roborunner4.png",
-      "img/roborunner/Roborunner5.png"
-    ],
-    es: {
-      title: "Roborunner",
-      role: "Diseño y desarrollo",
-      shortDesc: "Endless runner 2D pixel art con estética retro.",
-      longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
-      workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+    {
+      id: "roborunner",
+      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
+      cover: "img/roborunner/Roborunner0.png",
+      mode: "solo",          // "solo" | "team"
+      jam: false,
+      dateCreated: "12/2025",
+      dateUpdated: "12/2025",
+      studio: null,           // proyecto en solitario: no se muestra estudio/equipo
+      link: "https://raccoonindiegamedev.itch.io/roborunner",
+      tags: ["2D", "Endless runner"], // etiquetas propias del proyecto, además de las fijas
+      gallery: [
+        "img/roborunner/RoborunnerTrailer.mp4",
+        "img/roborunner/Roborunner1.png",
+        "img/roborunner/Roborunner2.png",
+        "img/roborunner/Roborunner3.png",
+        "img/roborunner/Roborunner4.png",
+        "img/roborunner/Roborunner5.png"
+      ],
+      es: {
+        title: "Roborunner",
+        role: "Diseño y desarrollo",
+        shortDesc: "No dejes que el robot de seguridad te pille.",
+        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
+        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+      },
+      en: {
+        title: "Roborunner",
+        role: "Design & development",
+        shortDesc: "2D pixel-art endless runner with a retro look.",
+        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
+        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+      }
     },
-    en: {
-      title: "Roborunner",
-      role: "Design & development",
-      shortDesc: "2D pixel-art endless runner with a retro look.",
-      longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
-      workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+    {
+      id: "callofpomni",
+      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
+      cover: "img/callofpomni/CallofPomni0.png",
+      mode: "solo",          // "solo" | "team"
+      jam: false,
+      dateCreated: "3/2026",
+      dateUpdated: "3/2026",
+      studio: null,           // proyecto en solitario: no se muestra estudio/equipo
+      link: "https://raccoonindiegamedev.itch.io/call-of-pomni",
+      tags: ["3D", "Dual Stick Shooter"], // etiquetas propias del proyecto, además de las fijas
+      gallery: [
+        "img/roborunner/RoborunnerTrailer.mp4",
+        "img/roborunner/Roborunner1.png",
+        "img/roborunner/Roborunner2.png",
+        "img/roborunner/Roborunner3.png",
+        "img/roborunner/Roborunner4.png",
+        "img/roborunner/Roborunner5.png"
+      ],
+      es: {
+        title: "Call of Pomni",
+        role: "Diseño y desarrollo",
+        shortDesc: "Aguanta las máximas oleadas posibles e intenta volver al circo digital.",
+        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
+        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+      },
+      en: {
+        title: "Roborunner",
+        role: "Design & development",
+        shortDesc: "2D pixel-art endless runner with a retro look.",
+        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
+        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+      }
+    },
+    {
+      id: "trespasser",
+      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
+      cover: "img/trespasser/Trespasser0.png",
+      mode: "solo",          // "solo" | "team"
+      jam: false,
+      dateCreated: "6/2026",
+      dateUpdated: "6/2026",
+      studio: null,           // proyecto en solitario: no se muestra estudio/equipo
+      link: "https://raccoonindiegamedev.itch.io/trespasser",
+      tags: ["3D", "First Person Adventure"], // etiquetas propias del proyecto, además de las fijas
+      gallery: [
+        "img/roborunner/RoborunnerTrailer.mp4",
+        "img/roborunner/Roborunner1.png",
+        "img/roborunner/Roborunner2.png",
+        "img/roborunner/Roborunner3.png",
+        "img/roborunner/Roborunner4.png",
+        "img/roborunner/Roborunner5.png"
+      ],
+      es: {
+        title: "Trespasser",
+        role: "Diseño y desarrollo",
+        shortDesc: "Explora el hospital abandonado y consigue las mejores fotos en el proceso.",
+        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
+        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+      },
+      en: {
+        title: "Roborunner",
+        role: "Design & development",
+        shortDesc: "2D pixel-art endless runner with a retro look.",
+        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
+        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+      }
+    },
+    {
+      id: "goodnightmom",
+      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
+      cover: "img/goodnightmom/GoodnightMom0.png",
+      mode: "team",          // "solo" | "team"
+      jam: true,
+      dateCreated: "2/2026",
+      dateUpdated: "2/2026",
+      studio: null,           // proyecto en solitario: no se muestra estudio/equipo
+      link: "https://sofia-vanh.itch.io/good-night-mom",
+      tags: ["2D", "3D", "Casual", "Minigames"], // etiquetas propias del proyecto, además de las fijas
+      gallery: [
+        "img/roborunner/RoborunnerTrailer.mp4",
+        "img/roborunner/Roborunner1.png",
+        "img/roborunner/Roborunner2.png",
+        "img/roborunner/Roborunner3.png",
+        "img/roborunner/Roborunner4.png",
+        "img/roborunner/Roborunner5.png"
+      ],
+      es: {
+        title: "Good Night Mom",
+        role: "Diseño y desarrollo",
+        shortDesc: "Juega con tu consola sin que te pille mamá.",
+        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
+        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+      },
+      en: {
+        title: "Roborunner",
+        role: "Design & development",
+        shortDesc: "2D pixel-art endless runner with a retro look.",
+        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
+        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+      }
+    },
+    {
+      id: "monsterdiscofever",
+      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
+      cover: "img/monsterdiscofever/MonsterDiscoFever0.png",
+      mode: "team",          // "solo" | "team"
+      jam: true,
+      dateCreated: "3/2026",
+      dateUpdated: "3/2026",
+      studio: null,           // proyecto en solitario: no se muestra estudio/equipo
+      link: "https://raccoonindiegamedev.itch.io/monster-disco-fever",
+      tags: ["2D", "3D", "Casual", "Minigames"], // etiquetas propias del proyecto, además de las fijas
+      gallery: [
+        "img/roborunner/RoborunnerTrailer.mp4",
+        "img/roborunner/Roborunner1.png",
+        "img/roborunner/Roborunner2.png",
+        "img/roborunner/Roborunner3.png",
+        "img/roborunner/Roborunner4.png",
+        "img/roborunner/Roborunner5.png"
+      ],
+      es: {
+        title: "Monster Disco Fever",
+        role: "Diseño y desarrollo",
+        shortDesc: "Controla que ningún monstruo entre a la discoteca sin permiso.",
+        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
+        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+      },
+      en: {
+        title: "Roborunner",
+        role: "Design & development",
+        shortDesc: "2D pixel-art endless runner with a retro look.",
+        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
+        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+      }
+    },
+    {
+      id: "therisingodnecromancy",
+      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
+      cover: "img/therisingofnecromancy/TheRisingOfNecromancy0.png",
+      mode: "team",          // "solo" | "team"
+      jam: false,
+      dateCreated: "9/2026",
+      dateUpdated: "9/2026",
+      studio: "Pinwu Studios",           // proyecto en solitario: no se muestra estudio/equipo
+      link: null,
+      tags: ["3D", "Roguelite", "Conquista"], // etiquetas propias del proyecto, además de las fijas
+      gallery: [
+        "img/therisingofnecromancy/TheRisingOfNecromancyTrailer.mp4",
+        "img/therisingofnecromancy/TheRisingOfNecromancy1.png",
+        "img/therisingofnecromancy/TheRisingOfNecromancy2.png",
+        "img/therisingofnecromancy/TheRisingOfNecromancy3.png",
+        "img/therisingofnecromancy/TheRisingOfNecromancy4.png",
+        "img/therisingofnecromancy/TheRisingOfNecromancy5.png"
+      ],
+      es: {
+        title: "The Rising of Necromancy",
+        role: "Diseño y desarrollo",
+        shortDesc: "Conquista todo el reino con tu ejercito de no muertos.",
+        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
+        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+      },
+      en: {
+        title: "Roborunner",
+        role: "Design & development",
+        shortDesc: "2D pixel-art endless runner with a retro look.",
+        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
+        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+      }
     }
-  }
-];
+  ];
 
 /* =========================================================
    3) ESTADO

@@ -29,8 +29,8 @@ const dict = {
     projects_lede: "Una selección de proyectos en solitario y equipo.",
     project_cover_placeholder: "Carátula del juego",
     project_view: "Ver proyecto",
-    project_future_kicker: "Próximamente",
-    project_future_text: "Nuevos proyectos en desarrollo. Vuelve pronto para verlos.",
+    sort_newest: "Más nuevo primero",
+    sort_oldest: "Más antiguo primero",
 
     skills_kicker: "Habilidades",
     skills_title: "La caja de herramientas",
@@ -50,7 +50,8 @@ const dict = {
 
     footer_text: "Hecho con Unity, café y demasiadas ventanas de consola abiertas.",
 
-    modal_date: "Fecha",
+    modal_date: "Fecha de creación",
+    modal_date_updated: "Última actualización",
     modal_studio: "Estudio / equipo",
     modal_role: "Rol",
     modal_about: "Sobre el juego",
@@ -91,8 +92,8 @@ const dict = {
     projects_lede: "A selection of solo and team projects.",
     project_cover_placeholder: "Game cover art",
     project_view: "View project",
-    project_future_kicker: "Coming soon",
-    project_future_text: "New projects in the works. Check back soon.",
+    sort_newest: "Newest first",
+    sort_oldest: "Oldest first",
 
     skills_kicker: "Skills",
     skills_title: "The toolbox",
@@ -112,7 +113,8 @@ const dict = {
 
     footer_text: "Made with Unity, coffee and too many open console windows.",
 
-    modal_date: "Date",
+    modal_date: "Creation date",
+    modal_date_updated: "Last updated",
     modal_studio: "Studio / team",
     modal_role: "Role",
     modal_about: "About the game",
@@ -129,102 +131,57 @@ const dict = {
 
 /* =========================================================
    2) DATOS DE PROYECTOS
-   PLACEHOLDER: sustituye cada campo por la información real
-   de tu juego. "cover" y "gallery" son rutas a imágenes/vídeos
-   (ver README para dónde colocarlas); de momento se muestran
-   como bloques de color con texto.
+   Cada proyecto nuevo va aquí arriba de la lista (el orden
+   visual en pantalla lo decide getSortedProjects() a partir
+   de "dateCreated", no la posición en este array).
+
+   Campos:
+   - cover: ruta a la carátula. Solo se ve en la tarjeta
+     cerrada; el modal usa "gallery".
+   - gallery: array de rutas, en el orden en que se ven en el
+     carrusel del modal (vídeos .mp4/.webm/.mov o imágenes).
+   - mode: "solo" | "team". Si es "solo", el campo "studio" no
+     se muestra en el modal (déjalo en null).
+   - dateCreated / dateUpdated: formato "MM/YYYY".
+   - tags: etiquetas propias de este proyecto (además de las
+     fijas Unity/C#/gamedev/gamedesign que se añaden solas).
+   - es/en: título, rol, descripción corta, descripción larga
+     y mecánicas destacadas (o aportación si es en equipo), en
+     cada idioma.
    ========================================================= */
 const projects = [
   {
-    id: "proyecto-1",
-    cover: null,          // PLACEHOLDER: "img/proyecto-1-cover.jpg"
-    mode: "solo",         // "solo" | "team"
+    id: "roborunner",
+    // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
+    cover: "img/roborunner/Roborunner0.png",
+    mode: "solo",          // "solo" | "team"
     jam: false,
-    date: "[Fecha]",
-    studio: "[Estudio o equipo]",
-    role: "[Tu rol / roles]",
-    link: "#",            // PLACEHOLDER: enlace a la página del juego en GitHub
-    gallery: [null, null], // PLACEHOLDER: ["img/proyecto-1-1.jpg", "img/proyecto-1-2.mp4"]
+    dateCreated: "12/2025",
+    dateUpdated: "12/2025",
+    studio: null,           // proyecto en solitario: no se muestra estudio/equipo
+    link: "https://raccoonindiegamedev.itch.io/roborunner",
+    tags: ["2D", "Endless runner"], // etiquetas propias del proyecto, además de las fijas
+    gallery: [
+      "img/roborunner/RoborunnerTrailer.mp4",
+      "img/roborunner/Roborunner1.png",
+      "img/roborunner/Roborunner2.png",
+      "img/roborunner/Roborunner3.png",
+      "img/roborunner/Roborunner4.png",
+      "img/roborunner/Roborunner5.png"
+    ],
     es: {
-      title: "[Nombre del proyecto]",
-      shortDesc: "Una frase describiendo de qué trata el juego y qué lo hace interesante.",
-      longDesc: "Descripción más extensa del juego: género, ambientación y qué lo hace especial.",
-      workDesc: "Mecánicas destacadas que implementaste, o tu aportación si fue un proyecto en equipo."
+      title: "Roborunner",
+      role: "Diseño y desarrollo",
+      shortDesc: "Endless runner 2D pixel art con estética retro.",
+      longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
+      workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
     },
     en: {
-      title: "[Project name]",
-      shortDesc: "A sentence describing what the game is about and what makes it interesting.",
-      longDesc: "A longer description of the game: genre, setting and what makes it special.",
-      workDesc: "Notable mechanics you implemented, or your contribution if it was a team project."
-    }
-  },
-  {
-    id: "proyecto-2",
-    cover: null,
-    mode: "team",
-    jam: false,
-    date: "[Fecha]",
-    studio: "[Estudio o equipo]",
-    role: "[Tu rol / roles]",
-    link: "#",
-    gallery: [null, null],
-    es: {
-      title: "[Nombre del proyecto]",
-      shortDesc: "Una frase describiendo de qué trata el juego y qué lo hace interesante.",
-      longDesc: "Descripción más extensa del juego: género, ambientación y qué lo hace especial.",
-      workDesc: "Mecánicas destacadas que implementaste, o tu aportación si fue un proyecto en equipo."
-    },
-    en: {
-      title: "[Project name]",
-      shortDesc: "A sentence describing what the game is about and what makes it interesting.",
-      longDesc: "A longer description of the game: genre, setting and what makes it special.",
-      workDesc: "Notable mechanics you implemented, or your contribution if it was a team project."
-    }
-  },
-  {
-    id: "proyecto-3",
-    cover: null,
-    mode: "solo",
-    jam: true,
-    date: "[Fecha]",
-    studio: "[Estudio o equipo]",
-    role: "[Tu rol / roles]",
-    link: "#",
-    gallery: [null],
-    es: {
-      title: "[Nombre del proyecto]",
-      shortDesc: "Una frase describiendo de qué trata el juego y qué lo hace interesante.",
-      longDesc: "Descripción más extensa del juego: género, ambientación y qué lo hace especial.",
-      workDesc: "Mecánicas destacadas que implementaste, o tu aportación si fue un proyecto en equipo."
-    },
-    en: {
-      title: "[Project name]",
-      shortDesc: "A sentence describing what the game is about and what makes it interesting.",
-      longDesc: "A longer description of the game: genre, setting and what makes it special.",
-      workDesc: "Notable mechanics you implemented, or your contribution if it was a team project."
-    }
-  },
-  {
-    id: "proyecto-4",
-    cover: null,
-    mode: "team",
-    jam: false,
-    date: "[Fecha]",
-    studio: "[Estudio o equipo]",
-    role: "[Tu rol / roles]",
-    link: "#",
-    gallery: [null, null, null],
-    es: {
-      title: "[Nombre del proyecto]",
-      shortDesc: "Una frase describiendo de qué trata el juego y qué lo hace interesante.",
-      longDesc: "Descripción más extensa del juego: género, ambientación y qué lo hace especial.",
-      workDesc: "Mecánicas destacadas que implementaste, o tu aportación si fue un proyecto en equipo."
-    },
-    en: {
-      title: "[Project name]",
-      shortDesc: "A sentence describing what the game is about and what makes it interesting.",
-      longDesc: "A longer description of the game: genre, setting and what makes it special.",
-      workDesc: "Notable mechanics you implemented, or your contribution if it was a team project."
+      title: "Roborunner",
+      role: "Design & development",
+      shortDesc: "2D pixel-art endless runner with a retro look.",
+      longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
+      workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
     }
   }
 ];
@@ -235,6 +192,18 @@ const projects = [
 let currentLang = "es";
 let currentCarouselIndex = 0;
 let openProjectId = null;
+let sortDirection = "desc"; // "desc" = más nuevo primero, "asc" = más antiguo primero
+
+/* Convierte "MM/YYYY" en un valor numérico comparable para ordenar */
+function parseProjectDate(str) {
+  const [month, year] = String(str).split("/").map(Number);
+  return new Date(year || 0, (month || 1) - 1, 1).getTime();
+}
+
+function getSortedProjects() {
+  const sorted = [...projects].sort((a, b) => parseProjectDate(a.dateCreated) - parseProjectDate(b.dateCreated));
+  return sortDirection === "desc" ? sorted.reverse() : sorted;
+}
 
 /* =========================================================
    4) i18n: aplica el diccionario a toda la página
@@ -271,6 +240,7 @@ function applyI18n(lang) {
 function setLanguage(lang) {
   currentLang = lang;
   applyI18n(lang);
+  updateSortToggleLabel();
   renderProjects(lang);
   if (openProjectId) fillModal(openProjectId, lang);
 }
@@ -278,12 +248,29 @@ function setLanguage(lang) {
 /* =========================================================
    5) TARJETAS DE PROYECTO
    ========================================================= */
+function buildTagsHtml(project, lang) {
+  const customTags = (project.tags || []).map(tag => `<li>${tag}</li>`).join("");
+  const modeTagText = project.mode === "solo" ? dict[lang].tag_solo : dict[lang].tag_team;
+  const jamTagHtml = project.jam ? `<li class="tag-jam">${dict[lang].tag_jam}</li>` : "";
+  return `
+    ${customTags}
+    <li>Unity</li>
+    <li>C#</li>
+    <li>gamedev</li>
+    <li>gamedesign</li>
+    <li class="tag-mode">${modeTagText}</li>
+    ${jamTagHtml}
+  `;
+}
+
 function renderProjects(lang) {
   const grid = document.getElementById("projectGrid");
   if (!grid) return;
   grid.innerHTML = "";
 
-  projects.forEach((project, index) => {
+  const sortedProjects = getSortedProjects();
+
+  sortedProjects.forEach((project, index) => {
     const t = project[lang];
     const layoutClass = index % 2 === 0 ? "project-a" : "project-b";
     const thumbClass = `thumb-${(index % 4) + 1}`;
@@ -295,9 +282,6 @@ function renderProjects(lang) {
       ? `<img src="${project.cover}" alt="${t.title}">`
       : `<span>${dict[lang].project_cover_placeholder}</span>`;
 
-    const modeTagText = project.mode === "solo" ? dict[lang].tag_solo : dict[lang].tag_team;
-    const jamTagHtml = project.jam ? `<li class="tag-jam">${dict[lang].tag_jam}</li>` : "";
-
     card.innerHTML = `
       <div class="project-thumb placeholder-thumb ${thumbClass}">
         ${coverHtml}
@@ -306,12 +290,7 @@ function renderProjects(lang) {
         <h3>${t.title}</h3>
         <p>${t.shortDesc}</p>
         <ul class="project-tags">
-          <li>Unity</li>
-          <li>C#</li>
-          <li>gamedev</li>
-          <li>gamedesign</li>
-          <li class="tag-mode">${modeTagText}</li>
-          ${jamTagHtml}
+          ${buildTagsHtml(project, lang)}
         </ul>
         <button type="button" class="btn btn-ghost project-link-btn" data-project-id="${project.id}">
           ${dict[lang].project_view}
@@ -357,25 +336,25 @@ function fillModal(projectId, lang) {
   const t = project[lang];
 
   document.getElementById("modalTitle").textContent = t.title;
-  document.getElementById("modalDate").textContent = project.date;
-  document.getElementById("modalStudio").textContent = project.studio;
-  document.getElementById("modalRole").textContent = project.role;
+  document.getElementById("modalDate").textContent = project.dateCreated;
+  document.getElementById("modalDateUpdated").textContent = project.dateUpdated;
+
+  const studioRow = document.getElementById("modalStudioRow");
+  if (project.studio) {
+    studioRow.style.display = "";
+    document.getElementById("modalStudio").textContent = project.studio;
+  } else {
+    studioRow.style.display = "none";
+  }
+
+  document.getElementById("modalRole").textContent = t.role;
   document.getElementById("modalLongDesc").textContent = t.longDesc;
   document.getElementById("modalWorkDesc").textContent = t.workDesc;
   document.getElementById("modalWorkLabel").textContent =
     project.mode === "solo" ? dict[lang].modal_contribution_solo : dict[lang].modal_contribution_team;
   document.getElementById("modalLink").href = project.link;
 
-  const modeTagText = project.mode === "solo" ? dict[lang].tag_solo : dict[lang].tag_team;
-  const jamTagHtml = project.jam ? `<li class="tag-jam">${dict[lang].tag_jam}</li>` : "";
-  document.getElementById("modalTags").innerHTML = `
-    <li>Unity</li>
-    <li>C#</li>
-    <li>gamedev</li>
-    <li>gamedesign</li>
-    <li class="tag-mode">${modeTagText}</li>
-    ${jamTagHtml}
-  `;
+  document.getElementById("modalTags").innerHTML = buildTagsHtml(project, lang);
 
   renderCarousel(project, lang);
 }
@@ -440,6 +419,27 @@ if (carouselNext) carouselNext.addEventListener("click", () => moveCarousel(1));
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && !modalOverlay.hidden) closeModal();
 });
+
+/* =========================================================
+   6bis) ORDEN DE PROYECTOS (más nuevo / más antiguo primero)
+   ========================================================= */
+const sortToggle = document.getElementById("sortToggle");
+const sortToggleLabel = document.getElementById("sortToggleLabel");
+
+function updateSortToggleLabel() {
+  if (!sortToggleLabel) return;
+  sortToggleLabel.textContent = sortDirection === "desc"
+    ? dict[currentLang].sort_newest
+    : dict[currentLang].sort_oldest;
+}
+
+if (sortToggle) {
+  sortToggle.addEventListener("click", () => {
+    sortDirection = sortDirection === "desc" ? "asc" : "desc";
+    updateSortToggleLabel();
+    renderProjects(currentLang);
+  });
+}
 
 /* =========================================================
    7) SELECTOR DE IDIOMA (desplegable con banderas)
@@ -508,4 +508,5 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
    10) INICIALIZACIÓN
    ========================================================= */
 applyI18n(currentLang);
+updateSortToggleLabel();
 renderProjects(currentLang);

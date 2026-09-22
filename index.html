@@ -122,18 +122,17 @@
   <section id="proyectos" class="projects">
     <div class="wrap">
       <p class="section-kicker" data-i18n="projects_kicker">Proyectos</p>
-      <h2 data-i18n="projects_title">Lo que he construido</h2>
+      <div class="projects-heading">
+        <h2 data-i18n="projects_title">Lo que he construido</h2>
+        <button type="button" class="sort-toggle" id="sortToggle" aria-label="Cambiar orden">
+          <span id="sortToggleLabel" data-i18n="sort_newest">Más nuevo primero</span>
+          <span class="sort-toggle-arrow" aria-hidden="true">⇄</span>
+        </button>
+      </div>
       <p class="section-lede" data-i18n="projects_lede">Una selección de proyectos en solitario y equipo.</p>
 
       <div class="project-list" id="projectGrid">
         <!-- Las fichas de proyecto se generan desde script.js (array "projects") -->
-      </div>
-
-      <div class="project-future">
-        <div class="future-inner">
-          <p class="future-kicker" data-i18n="project_future_kicker">Próximamente</p>
-          <p data-i18n="project_future_text">Nuevos proyectos en desarrollo. Vuelve pronto para verlos.</p>
-        </div>
       </div>
     </div>
   </section>
@@ -222,10 +221,14 @@
 
       <dl class="modal-meta">
         <div>
-          <dt data-i18n="modal_date">Fecha</dt>
+          <dt data-i18n="modal_date">Fecha de creación</dt>
           <dd id="modalDate"></dd>
         </div>
         <div>
+          <dt data-i18n="modal_date_updated">Última actualización</dt>
+          <dd id="modalDateUpdated"></dd>
+        </div>
+        <div id="modalStudioRow">
           <dt data-i18n="modal_studio">Estudio / equipo</dt>
           <dd id="modalStudio"></dd>
         </div>

@@ -33,7 +33,7 @@ html{ scroll-behavior: smooth; }
 body{
   margin: 0;
   background: var(--bg);
-  color: var(--ink);
+  color: rgb(255, 235, 255);
   font-family: var(--font-body);
   font-size: 17px;
   line-height: 1.6;
@@ -41,7 +41,7 @@ body{
 
 h1, h2, h3{
   font-family: var(--font-display);
-  color: var(--ink);
+  color: rgb(255, 235, 255);
   line-height: 1.15;
   margin: 0 0 0.4em;
   font-weight: 600;
@@ -80,7 +80,7 @@ section{ padding: 96px 0; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(251, 241, 224, 0.9);
+  background: rgb(72, 51, 89);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(54, 36, 71, 0.08);
 }
@@ -93,22 +93,30 @@ section{ padding: 96px 0; }
   padding-bottom: 18px;
 }
 
+.foton{
+    width: 280px; /* Ancho fijo */
+    height: 280px; /* Alto fijo */
+    border-radius: 50%;       /* Hace la foto redonda */
+    object-fit: cover;        /* Evita que la foto se deforme o aplaste */
+    background-color: rgb(74, 155, 137);
+}
+
 .logo{
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.4rem;
   text-decoration: none;
-  color: var(--ink);
+  color: rgb(255, 235, 255);
 }
 
 .nav{ display: flex; gap: 28px; }
 .nav a{
   text-decoration: none;
   font-weight: 500;
-  color: var(--ink-soft);
+  color: rgb(255, 255, 255);
   position: relative;
 }
-.nav a:hover{ color: var(--ink); }
+.nav a:hover{ color: rgb(255, 235, 255); }
 
 .header-controls{
   display: flex;
@@ -124,23 +132,23 @@ section{ padding: 96px 0; }
   display: flex;
   align-items: center;
   gap: 6px;
-  background: var(--card);
+  background: rgb(119, 94, 140);
   border: none;
   border-radius: 999px;
   padding: 7px 14px;
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.85rem;
-  color: var(--ink);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   box-shadow: var(--shadow-card);
 }
-.lang-dropdown-toggle:hover{ background: var(--bg-soft); }
+.lang-dropdown-toggle:hover{ background: rgb(100, 77, 117); color: rgb(255, 235, 255) }
 
 .lang-flag{ font-size: 1.1rem; line-height: 1; }
 .lang-caret{
   font-size: 0.7rem;
-  color: var(--ink-soft);
+  color: rgb(255, 235, 255);
   transition: transform 0.15s ease;
 }
 .lang-dropdown-toggle[aria-expanded="true"] .lang-caret{ transform: rotate(180deg); }
@@ -153,7 +161,7 @@ section{ padding: 96px 0; }
   margin: 0;
   padding: 6px;
   list-style: none;
-  background: var(--card);
+  background: rgb(119, 94, 140);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
   z-index: 60;
@@ -169,10 +177,12 @@ section{ padding: 96px 0; }
   font-weight: 500;
   font-size: 0.92rem;
   cursor: pointer;
+  
 }
 .lang-menu li:hover,
 .lang-menu li[aria-selected="true"]{
-  background: var(--bg-soft);
+  background: rgb(100, 77, 117);
+  color: rgb(255, 235, 255);
 }
 .lang-menu li[aria-selected="true"]{ font-weight: 600; }
 
@@ -207,12 +217,12 @@ section{ padding: 96px 0; }
 .btn:hover{ transform: translateY(-2px); }
 
 .btn-primary{
-  background: var(--accent-honey);
+  background: rgb(74, 155, 137);
   color: var(--ink);
 }
 .btn-ghost{
-  border: 2px solid var(--ink);
-  color: var(--ink);
+  border: 2px solid rgb(255, 235, 255);
+  color: rgb(255, 235, 255);
 }
 
 .hero-actions{ display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
@@ -220,7 +230,7 @@ section{ padding: 96px 0; }
 /* =========================================================
    HERO
    ========================================================= */
-.hero{ padding-top: 72px; }
+.hero{ padding-top: 72px; background: rgb(72, 51, 89); }
 
 .hero-grid{
   display: grid;
@@ -238,10 +248,10 @@ section{ padding: 96px 0; }
 
 .hero-highlight{
   font-style: italic;
-  color: var(--accent-moss);
+  color: rgb(74, 155, 137);
 }
 
-.hero-lede{ color: var(--ink-soft); font-size: 1.08rem; }
+.hero-lede{ color: rgb(255, 235, 255); font-size: 1.08rem; }
 
 .hero-art{
   position: relative;
@@ -260,12 +270,13 @@ section{ padding: 96px 0; }
 
 .tag{
   position: absolute;
-  background: var(--card);
+  background: rgb(255, 235, 255);
   border-radius: 999px;
   padding: 7px 16px;
   font-size: 0.85rem;
   font-weight: 600;
   box-shadow: var(--shadow-card);
+  color: var(--ink);
 }
 .tag-1{ top: 8%;  left: 4%; }
 .tag-2{ bottom: 14%; left: -2%; }
@@ -274,7 +285,7 @@ section{ padding: 96px 0; }
 /* =========================================================
    SOBRE MÍ
    ========================================================= */
-.about{ background: var(--bg-soft); }
+.about{ background: rgb(54, 36, 71); }
 
 .about-grid{
   display: grid;
@@ -284,16 +295,16 @@ section{ padding: 96px 0; }
 }
 
 .portrait-frame{
-  aspect-ratio: 1;
+  width: 280px; /* Ancho fijo */
+  height: 280px; /* Alto fijo */
   border-radius: 40% 60% 55% 45% / 50% 45% 55% 50%;
-  background: var(--accent-moss);
+  background: rgb(74, 155, 137);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--card);
   font-weight: 600;
   text-align: center;
-  padding: 24px;
+  padding: 5px;
 }
 
 .about-facts{
@@ -314,7 +325,7 @@ section{ padding: 96px 0; }
   color: var(--accent-berry);
   font-weight: 600;
 }
-.about-facts span{ color: var(--ink-soft); }
+.about-facts span{ color: rgb(255, 235, 255); }
 
 /* =========================================================
    PROYECTOS

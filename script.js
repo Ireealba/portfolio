@@ -253,7 +253,7 @@ const projects = [
     {
       id: "goodnightmom",
       // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
-      cover: "img/goodnightmom/GoodnightMom0.png",
+      cover: "img/goodnightmom/GoodNightMom0.webp",
       mode: "team",          // "solo" | "team"
       jam: true,
       dateCreated: "2/2026",

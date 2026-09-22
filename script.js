@@ -194,12 +194,12 @@ const projects = [
       link: "https://raccoonindiegamedev.itch.io/call-of-pomni",
       tags: ["3D", "Dual Stick Shooter"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
-        "img/roborunner/RoborunnerTrailer.mp4",
-        "img/roborunner/Roborunner1.png",
-        "img/roborunner/Roborunner2.png",
-        "img/roborunner/Roborunner3.png",
-        "img/roborunner/Roborunner4.png",
-        "img/roborunner/Roborunner5.png"
+        "img/callofpomni/CallofPomniTrailer.mp4",
+        "img/callofpomni/CallofPomni1.png",
+        "img/callofpomni/CallofPomni2.png",
+        "img/callofpomni/CallofPomni3.png",
+        "img/callofpomni/CallofPomni4.png",
+        "img/callofpomni/CallofPomni5.png"
       ],
       es: {
         title: "Call of Pomni",
@@ -228,12 +228,12 @@ const projects = [
       link: "https://raccoonindiegamedev.itch.io/trespasser",
       tags: ["3D", "First Person Adventure"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
-        "img/roborunner/RoborunnerTrailer.mp4",
-        "img/roborunner/Roborunner1.png",
-        "img/roborunner/Roborunner2.png",
-        "img/roborunner/Roborunner3.png",
-        "img/roborunner/Roborunner4.png",
-        "img/roborunner/Roborunner5.png"
+        "img/trespasser/TrespasserTrailer.mp4",
+        "img/trespasser/Trespasser1.png",
+        "img/trespasser/Trespasser2.png",
+        "img/trespasser/Trespasser3.png",
+        "img/trespasser/Trespasser4.png",
+        "img/trespasser/Trespasser5.png"
       ],
       es: {
         title: "Trespasser",
@@ -262,12 +262,12 @@ const projects = [
       link: "https://sofia-vanh.itch.io/good-night-mom",
       tags: ["2D", "3D", "Casual", "Minigames"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
-        "img/roborunner/RoborunnerTrailer.mp4",
-        "img/roborunner/Roborunner1.png",
-        "img/roborunner/Roborunner2.png",
-        "img/roborunner/Roborunner3.png",
-        "img/roborunner/Roborunner4.png",
-        "img/roborunner/Roborunner5.png"
+        "img/goodnightmom/GoodnightMomTrailer.mp4",
+        "img/goodnightmom/GoodnightMom1.png",
+        "img/goodnightmom/GoodnightMom2.png",
+        "img/goodnightmom/GoodnightMom3.png",
+        "img/goodnightmom/GoodnightMom4.png",
+        "img/goodnightmom/GoodnightMom5.png"
       ],
       es: {
         title: "Good Night Mom",
@@ -296,12 +296,12 @@ const projects = [
       link: "https://raccoonindiegamedev.itch.io/monster-disco-fever",
       tags: ["2D", "3D", "Casual", "Minigames"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
-        "img/roborunner/RoborunnerTrailer.mp4",
-        "img/roborunner/Roborunner1.png",
-        "img/roborunner/Roborunner2.png",
-        "img/roborunner/Roborunner3.png",
-        "img/roborunner/Roborunner4.png",
-        "img/roborunner/Roborunner5.png"
+        "img/monsterdiscofever/MonsterDiscoFeverTrailer.mp4",
+        "img/monsterdiscofever/MonsterDiscoFever1.png",
+        "img/monsterdiscofever/MonsterDiscoFever2.png",
+        "img/monsterdiscofever/MonsterDiscoFever3.png",
+        "img/monsterdiscofever/MonsterDiscoFever4.png",
+        "img/monsterdiscofever/MonsterDiscoFever5.png"
       ],
       es: {
         title: "Monster Disco Fever",

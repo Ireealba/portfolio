@@ -285,7 +285,7 @@ function renderProjects(lang) {
         ${coverHtml}
       </div>
       <div class="project-copy">
-        <h3>${t.title}</h3>
+        <h2>${t.title}</h2>
         <p>${t.shortDesc}</p>
         <ul class="project-tags">
           ${buildTagsHtml(project, lang)}

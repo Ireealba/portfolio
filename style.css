@@ -32,7 +32,7 @@ html{ scroll-behavior: smooth; }
 
 body{
   margin: 0;
-  background: var(--bg);
+  background: rgb(72, 51, 89);
   color: rgb(255, 235, 255);
   font-family: var(--font-body);
   font-size: 17px;
@@ -71,7 +71,7 @@ section{ padding: 96px 0; }
   margin: 0 0 0.3em;
 }
 
-.section-lede{ color: var(--ink-soft); }
+.section-lede{ color: rgb(255, 235, 255);; }
 
 /* =========================================================
    HEADER
@@ -341,14 +341,19 @@ section{ padding: 96px 0; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
-  background: var(--card);
+  background: rgb(119, 94, 140);;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-card);
 }
 
+.project-copy h2{
+  color: var(--accent-berry);
+}
+
 .project-b{ direction: rtl; }
 .project-b .project-copy{ direction: ltr; }
+
 .project-b .project-thumb{ direction: ltr; }
 
 .project-thumb{
@@ -356,19 +361,16 @@ section{ padding: 96px 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
   text-align: center;
 }
 .placeholder-thumb{
   color: var(--card);
   font-weight: 600;
-  background-image: radial-gradient(rgba(255,255,255,0.35) 2px, transparent 2px);
-  background-size: 18px 18px;
 }
-.thumb-1{ background-color: var(--accent-berry); }
-.thumb-2{ background-color: var(--accent-moss); }
-.thumb-3{ background-color: var(--accent-honey); }
-.thumb-4{ background-color: var(--ink-soft); }
+.thumb-1{ }
+.thumb-2{ }
+.thumb-3{ }
+.thumb-4{ }
 
 .project-copy{
   padding: 36px 40px;
@@ -386,7 +388,7 @@ section{ padding: 96px 0; }
   margin: 10px 0 18px;
 }
 .project-tags li{
-  background: var(--bg-soft);
+  background: rgb(255, 235, 255);
   border-radius: 999px;
   padding: 5px 14px;
   font-size: 0.85rem;
@@ -394,8 +396,7 @@ section{ padding: 96px 0; }
   color: var(--ink-soft);
 }
 .project-tags li.tag-mode{
-  background: var(--accent-moss);
-  color: var(--card);
+  background: rgb(222, 182, 222);
 }
 .project-tags li.tag-jam{
   background: var(--accent-honey);
@@ -407,6 +408,8 @@ section{ padding: 96px 0; }
   border: none;
   cursor: pointer;
   font-family: var(--font-body);
+  background: rgb(74, 155, 137);
+  color: rgb(72, 51, 89);
 }
 
 .projects-heading{

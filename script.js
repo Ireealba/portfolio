@@ -254,8 +254,18 @@ const projects = [
         title: "Trespasser",
         role: "Diseño y desarrollo",
         shortDesc: "Explora el hospital abandonado y consigue las mejores fotos en el proceso.",
-        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
-        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+        longDesc: "En esta oscura aventura somos un chaval que como hobby hace urbex y tras consseguir" +
+            " una cámara de fotos antigua estilo Polaroid, decide adentrarse en un hospital abandonado" +
+            " que hay en su ciudad ya que tiene muchas leyendas que dicen que está encantado y quiere " +
+            "intentar captar algo paranormal con la cámara. \n" +
+            "Debes explorar el hosppital usando la cámara para revelar cosas que no se ven a simple vista. " +
+            "Resuelve puzles, consigue información de lo que pasó avanza en la exploración y también..." +
+            " invoca a un ente maligno y escapa de él??",
+        workDesc: "* Sistema de cámara de fotos que captura lo que tienes delante incluyendo lo que está en " +
+            "una capa invisible para el jugador \n" +
+            "* Puzles interactivos \n" +
+            "* IA con sistema de estados: patrulla, alerta, busqueda, ataque \n" +
+            "* Sistema de detección del jugador mediante voz"
       },
       en: {
         title: "Roborunner",
@@ -356,8 +366,32 @@ const projects = [
         title: "The Rising of Necromancy",
         role: "Diseño y desarrollo",
         shortDesc: "Conquista todo el reino con tu ejercito de no muertos.",
-        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
-        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+        longDesc: "En esta aventura eres José José," +
+            " el hijo del mejor herrero del reino que tras proporcionarles las armas y" +
+            " equipamiento necesarios para acabar con el malvado rey nigromante Manuel Jesús," +
+            "enloquecieron matando a tu familia y encarcelandote para evitar tu rebeldia." +
+            " Por cosas del destino acabas en la zelda junto al rey nigromante el cual te " +
+            "convierte en su discípulo pasándote el poco poder que le queda con la narrativa " +
+            "de que si vuelves a juntar todas las partes de su poderoso libro de artes nigromantes," +
+            " él podrá devolverte a tu familia.\n" +
+            "Con esta premisa debemos acabar con las tropas de los héroes para conseguir secuaces" +
+            " que te ayuden a conquistar las diversas partes de las fortalezas de cada héroe" +
+            " para llegar a este y acabar con él consiguiendo una parte del libro hasta juntarlas todas," +
+            " pero sin olvidar que si fallamos en nuestra misión y nos derrotan perderemos nuestro " +
+            "progreso de conquista y deberemos volver empezar." ,
+        
+        workDesc: "* Diseño y creación del Lobby \n" +
+            "* Sistema de inventario del player con slots específicos por tipo de objeto \n" +
+            "* Cofre con inventario \n" +
+            "* Cofre con recompensas \n" +
+            "* Tienda de materiales \n" +
+            "* Sistema de crafteo \n" +
+            "* Estatuas para invocar secuaces \n" +
+            "* Sistema de curación (mediante el rey nigromante y pociones) \n" +
+            "* Manager de escena para tener una escena persistente con pantalla de carga que mantiene el player," +
+            "pool manager y HUD necesario entre escenas \n" +
+            "* Sistema de misiones para los distintos niveles \n" +
+            "* Diseño y desarrollo del tutorial"
       },
       en: {
         title: "Roborunner",

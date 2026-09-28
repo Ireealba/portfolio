@@ -57,10 +57,10 @@ const dict = {
     skill_teamwork: "Trabajo en equipo",
 
     contact_kicker: "Contacto",
-    contact_title: "¿Hacemos algo juntos?",
-    contact_lede: "Abierta a colaboraciones, prácticas y proyectos en equipo.",
+    contact_title: "Contacta conmigo",
+    contact_lede: "o sigue mi trabajo si lo prefieres",
 
-    footer_text: "Hecho con Unity, café y demasiadas ventanas de consola abiertas.",
+    footer_text: "Hecho con Unity, monster y demasiados Unity Crash Handle Error.",
 
     modal_date: "Fecha de creación",
     modal_date_updated: "Última actualización",
@@ -186,8 +186,15 @@ const projects = [
         title: "Roborunner",
         role: "Diseño y desarrollo",
         shortDesc: "No dejes que el robot de seguridad te pille.",
-        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
-        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+        longDesc: "En esta aventura endless runner 2D eres H3C10r," +
+            " un robot que fue inventado para entretener y ayudar a la gente en las recreativas," +
+            " pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo" +
+            " y llevarlo a desmantelación, así que no le queda otra que correr y huir," +
+            " porque como se detenga un solo instante será su fin.",
+        workDesc: "* Generación dinámica de escenarios \n" +
+            "* Power ups que cambian la jugabilidad \n" +
+            "* Sistema de tienda para comprar mejoras \n" +
+            "* Sistema de misiones que recompensan al jugador"
       },
       en: {
         title: "Roborunner",
@@ -220,8 +227,22 @@ const projects = [
         title: "Call of Pomni",
         role: "Diseño y desarrollo",
         shortDesc: "Aguanta las máximas oleadas posibles e intenta volver al circo digital.",
-        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
-        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+        longDesc: "Eres Pomni (de la web serie The Amazing Digital Circus) en una nueva misión de Caine." +
+            " En esta misión estás atrapada en un videojuego de zombies y debes avanzar entre las zonas buscando " +
+            "(aunque en vano) el final del juego. \n" +
+            "Con esta premisa disfruta de un shooter por oleadas con distintos tipos de zombies enemigos," +
+            " con zonas que cambian en cada partida, distintos tipos de eventos en cada zona y desbloquea las distintas" +
+            " armas y habilidades para hacer más fácil la misión de avanzar." +
+            " Pero recuerda que si acaban contigo los zombies lo perderás todo y tendrás que empezar desde el principio.",
+        workDesc: "* Sistema de aleatorizado de zonas \n" +
+            "* Sistema de desbloqueo de zonas \n" +
+            "* Sistema de subida de nivel mediante experiencia \n" +
+            "* Distintos tipos de enemigos con distinto comportamientos \n" +
+            "* Distintasa armas y habilidades con distinto comportamiento \n" +
+            "* Máquinas expendedoras que te dan vida y munición \n" +
+            "* Distintos tipos de eventos por zona: oleada, arma, habilidad, supervivientes, monedas, llave \n" +
+            "* Sistema de oleadas \n" +
+            "* Sistema de logros"
       },
       en: {
         title: "Roborunner",
@@ -298,8 +319,11 @@ const projects = [
         title: "Good Night Mom",
         role: "Diseño y desarrollo",
         shortDesc: "Juega con tu consola sin que te pille mamá.",
-        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
-        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+        longDesc: "Es de madrugada y deberías de estar durmiendo, pero tus ganas de seguir jugando a la consola " +
+            "superan el sueño aunque tu madre no está de acuerdo con eso. Sigue jugando los minijuegos y escondete" +
+            " si aparece mamá para evitar la regañina",
+        workDesc: "* Colaboración en el diseño general del juego \n" +
+            "* Diseño y desarrollo de los minijuegos"
       },
       en: {
         title: "Roborunner",
@@ -332,8 +356,13 @@ const projects = [
         title: "Monster Disco Fever",
         role: "Diseño y desarrollo",
         shortDesc: "Controla que ningún monstruo entre a la discoteca sin permiso.",
-        longDesc: "En esta aventura endless runner 2D eres H3C10r, un robot que fue inventado para entretener y ayudar a la gente en las recreativas, pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo y llevarlo a desmantelación, así que no le queda otra que correr y huir, porque como se detenga un solo instante será su fin. El arte de los personajes y los escenarios es de Denis Bezmaternykh, el arte del HUD viene de la Asset Store, y el resto del arte lo he hecho yo.",
-        workDesc: "Generación dinámica de escenarios: hay varios tramos de nivel ya creados que se van encadenando solos de forma aleatoria pero siguiendo una lógica por tipo de escenario (por ejemplo, el escenario 1.1 solo puede ir seguido del 1.2, nunca del 1.3 o del 2.1). Power-ups que cambian la jugabilidad principal, sistema de tienda para comprar mejoras y sistema de misiones que recompensan al jugador."
+        longDesc: "Acabas de ser contratado como seguridad en una prestigiosa discoteca de mosntruos" +
+            " y debes realizar una serie de pruebas a cada monstruo que quiera entrar. \n" +
+            "Para dejarlos pasar o no deberás comprobar mediante minijuegos su estado de alcoholización, " +
+            "si ha tomado alguna sustancia, si lleva algo sospechoso encima o si " +
+            "simplemente es menor de edad",
+        workDesc: "* Colaboración en el diseño de jugabilidad general \n" +
+            "* Diseño y desarrollo de los distintos minijuegos"
       },
       en: {
         title: "Roborunner",

@@ -30,6 +30,8 @@ const dict = {
     project_view: "Ver proyecto",
     sort_newest: "Más nuevo primero",
     sort_oldest: "Más antiguo primero",
+    theme_to_light: "Cambiar a tema claro",
+    theme_to_dark: "Cambiar a tema oscuro",
 
     skills_kicker: "Habilidades",
     skills_title: "La caja de herramientas",
@@ -92,6 +94,8 @@ const dict = {
     project_view: "View project",
     sort_newest: "Newest first",
     sort_oldest: "Oldest first",
+    theme_to_light: "Switch to light theme",
+    theme_to_dark: "Switch to dark theme",
 
     skills_kicker: "Skills",
     skills_title: "The toolbox",
@@ -409,6 +413,7 @@ function setLanguage(lang) {
   currentLang = lang;
   applyI18n(lang);
   updateSortToggleLabel();
+  updateThemeToggleLabel();
   renderProjects(lang);
   if (openProjectId) fillModal(openProjectId, lang);
 }
@@ -647,6 +652,39 @@ if (langToggle && langMenu) {
 }
 
 /* =========================================================
+   7bis) TEMA CLARO / OSCURO
+   El tema inicial lo aplica el script del <head> en index.html
+   (lee "theme" de localStorage; por defecto, oscuro).
+   ========================================================= */
+const THEME_KEY = "theme";
+const themeToggle = document.getElementById("themeToggle");
+
+function getTheme() {
+  return document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
+}
+
+function updateThemeToggleLabel() {
+  if (!themeToggle) return;
+  const label = getTheme() === "dark"
+    ? dict[currentLang].theme_to_light
+    : dict[currentLang].theme_to_dark;
+  themeToggle.setAttribute("aria-label", label);
+  themeToggle.setAttribute("title", label);
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
+  updateThemeToggleLabel();
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    setTheme(getTheme() === "dark" ? "light" : "dark");
+  });
+}
+
+/* =========================================================
    8) MENÚ MÓVIL
    ========================================================= */
 const navToggle = document.getElementById("navToggle");
@@ -677,4 +715,5 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
    ========================================================= */
 applyI18n(currentLang);
 updateSortToggleLabel();
+updateThemeToggleLabel();
 renderProjects(currentLang);

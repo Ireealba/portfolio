@@ -42,16 +42,16 @@
     <div class="header-controls">
       <div class="lang-dropdown" id="langDropdown">
         <button type="button" class="lang-dropdown-toggle" id="langToggle" aria-haspopup="listbox" aria-expanded="false">
-          <span class="lang-flag" id="langFlagCurrent">🇪🇸</span>
+          <img class="lang-flag" id="langFlagCurrent" src="img/general/es.png" alt="" width="20" height="20">
           <span class="lang-code" id="langCodeCurrent">ES</span>
           <span class="lang-caret" aria-hidden="true">▾</span>
         </button>
         <ul class="lang-menu" id="langMenu" role="listbox" hidden>
           <li role="option" data-lang="es" aria-selected="true">
-            <span class="lang-flag">🇪🇸</span> Español
+            <img class="lang-flag" src="img/general/es.png" alt="" width="20" height="20"> Español
           </li>
           <li role="option" data-lang="en" aria-selected="false">
-            <span class="lang-flag">🇬🇧</span> English
+            <img class="lang-flag" src="img/general/en.png" alt="" width="20" height="20"> English
           </li>
         </ul>
       </div>
@@ -78,16 +78,8 @@
     <div class="wrap hero-grid">
       <div class="hero-text">
         <p class="hero-kicker" data-i18n="hero_kicker">Desarrolladora de videojuegos · Unity</p>
-        <h1 data-i18n-html="hero_title">
-          Construyo mundos
-          <span class="hero-highlight">jugables</span>
-          desde Córdoba
-        </h1>
-        <p class="hero-lede" data-i18n="hero_lede">
-          Diseñadora y desarrolladora de videojuegos en Unity. 
-          Disfruto haciendo minijuegos estilo WarioWare y juegos cozy,
-          pero me gusta explorar géneros y mecánicas nuevos fuera de mi zona de confort.
-        </p>
+        <h1 data-i18n-html="hero_title">Convierto sueños en mundos <span class="hero-highlight">jugables</span> desde Córdoba</h1>
+        <p class="hero-lede" data-i18n="hero_lede">Diseñadora y desarrolladora de videojuegos en Unity. Disfruto haciendo minijuegos estilo WarioWare y juegos cozy, pero me gusta explorar géneros y mecánicas nuevos fuera de mi zona de confort.</p>
         <div class="hero-actions">
           <a href="#proyectos" class="btn btn-primary" data-i18n="btn_projects">Ver proyectos</a>
           <a href="#contacto" class="btn btn-ghost" data-i18n="btn_contact">Hablemos</a>
@@ -111,22 +103,13 @@
       </div>
       <div class="about-copy">
         <p class="section-kicker" data-i18n="about_kicker">Sobre mí</p>
-        <h2 data-i18n="about_title">De clase de diseño a la sala de máquinas del motor</h2>
-        <p data-i18n="about_p1">
-          Combino proyectos en solitario con trabajo en equipo dentro de mis estudios.
-          Me interesa especialmente la arquitectura del código tanto como el diseño del juego:
-          máquinas de estados, eventos desacoplados y sistemas que un equipo entero pueda
-          entender y ampliar sin miedo a romper nada.
-        </p>
-        <p data-i18n="about_p2">
-          Cuando no estoy dentro del editor de Unity, suelo estar pensando en la narrativa
-          de mi próximo proyecto o revisando cómo otros juegos resuelven un problema que
-          tengo entre manos.
-        </p>
+        <h2 data-i18n="about_title">La máquina creativa detrás de cada sueño</h2>
+        <p data-i18n="about_p1">Combino proyectos en solitario con trabajo en equipo, tanto en mis estudios como en mi experiencia profesional. Me interesa tanto la arquitectura del código como el diseño de juego.</p>
+        <p data-i18n="about_p2">Cuando no estoy dentro del editor de Unity, suelo estar pensando en la narrativa de posibles próximos proyectos o investigando cómo otros juegos usan mecánicas que tengo en mente. En mi tiempo libre me gusta dibujar, ver series, escuchar podcasts, leer o jugar a videojuegos en cualquier plataforma.</p>
         <ul class="about-facts">
-          <li><strong data-i18n="about_fact_engine_label">Motor</strong><span data-i18n="about_fact_engine_value">Unity 6 (HDRP / URP)</span></li>
-          <li><strong data-i18n="about_fact_lang_label">Lenguaje</strong><span data-i18n="about_fact_lang_value">C#</span></li>
-          <li><strong data-i18n="about_fact_edu_label">Formación</strong><span data-i18n="about_fact_edu_value">Estudiante de desarrollo de videojuegos</span></li>
+          <li><strong data-i18n="about_fact_lang_label">Lenguajes</strong><span data-i18n="about_fact_lang_value">C#, C++, Java</span></li>
+          <li><strong data-i18n="about_fact_edu_label">Formación</strong><span data-i18n="about_fact_edu_value">Máster en diseño y desarrollo de videojuegos, Grado Superior en Desarrollo de Aplicaciones Multiplataforma</span></li>
+          <li><strong data-i18n="about_fact_work_label">Experiencia laboral</strong><span data-i18n="about_fact_work_value">06/2023 – 09/2025: programadora junior en ICCA (desarrollo web en C# con .NET y trato directo con el cliente)</span></li>
         </ul>
       </div>
     </div>
@@ -137,13 +120,13 @@
     <div class="wrap">
       <p class="section-kicker" data-i18n="projects_kicker">Proyectos</p>
       <div class="projects-heading">
-        <h2 data-i18n="projects_title">Lo que he construido</h2>
+        <h2 data-i18n="projects_title">Sueños hechos juego</h2>
         <button type="button" class="sort-toggle" id="sortToggle" aria-label="Cambiar orden">
           <span id="sortToggleLabel" data-i18n="sort_newest">Más nuevo primero</span>
           <span class="sort-toggle-arrow" aria-hidden="true">⇄</span>
         </button>
       </div>
-      <p class="section-lede" data-i18n="projects_lede">Una selección de proyectos en solitario y equipo.</p>
+      <p class="section-lede" data-i18n="projects_lede">Una selección de proyectos en solitario y en equipo.</p>
 
       <div class="project-list" id="projectGrid">
         <!-- Las fichas de proyecto se generan desde script.js (array "projects") -->
@@ -198,11 +181,11 @@
   <section id="contacto" class="contact">
     <div class="wrap contact-inner">
       <p class="section-kicker" data-i18n="contact_kicker">Contacto</p>
-      <h2 data-i18n="contact_title">¿Hacemos algo juntos?</h2>
-      <p class="section-lede" data-i18n="contact_lede">Abierta a colaboraciones, prácticas y proyectos en equipo.</p>
+      <h2 data-i18n="contact_title">Contacta conmigo</h2>
+      <p class="section-lede" data-i18n="contact_lede">o sigue mi trabajo si lo prefieres</p>
       <div class="contact-links">
         <a href="mailto:iap232003@gmail.com">iap232003@gmail.com</a>
-        <a href="mailto:tu-email@ejemplo.com">635 87 56 44</a>
+        <a href="tel:+34635875644">635 87 56 44</a>
         <a href="https://github.com/Ireealba" target="_blank" rel="noopener">GitHub</a>
         <a href="https://raccoonindiegamedev.itch.io" target="_blank" rel="noopener">itch.io</a>
         <a href="https://www.tiktok.com/@_racoondev_" target="_blank" rel="noopener">TikTok</a>
@@ -214,7 +197,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>© <span id="year"></span> Iree. <span data-i18n="footer_text">Hecho con Unity, mucho monster y demasiadas ventanas de consola abiertas.</span></p>
+    <p>© <span id="year"></span> Iree. <span data-i18n="footer_text">Hecho con Unity, Monster y demasiados «Unity Crash Handler».</span></p>
   </div>
 </footer>
 
@@ -255,12 +238,12 @@
       <ul class="project-tags" id="modalTags"></ul>
 
       <h3 data-i18n="modal_about">Sobre el juego</h3>
-      <p id="modalLongDesc"></p>
+      <div id="modalLongDesc"></div>
 
       <h3 id="modalWorkLabel"></h3>
-      <p id="modalWorkDesc"></p>
+      <div id="modalWorkDesc"></div>
 
-      <a id="modalLink" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="modal_try">Pruébalo</a>
+      <a id="modalLink" class="btn btn-primary" target="_blank" rel="noopener">Pruébalo</a>
     </div>
   </div>
 </div>

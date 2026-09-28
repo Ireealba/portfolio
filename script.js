@@ -9,7 +9,7 @@ const dict = {
     nav_contact: "Contacto",
 
     hero_kicker: "Desarrolladora de videojuegos · Unity",
-    hero_title: 'Construyo mundos <span class="hero-highlight">jugables</span> desde Córdoba',
+    hero_title: 'Convierto sueños en mundos <span class="hero-highlight">jugables</span> desde Córdoba',
     hero_lede: "Diseñadora y desarrolladora de videojuegos en Unity." +
         " Disfruto haciendo minijuegos estilo WarioWare y juegos cozy," +
         " pero me gusta explorar géneros y mecánicas nuevos fuera de mi zona de confort.",
@@ -17,26 +17,26 @@ const dict = {
     btn_contact: "Hablemos",
 
     about_kicker: "Sobre mí",
-    about_title: "De clase de diseño a la sala de máquinas del motor",
-    about_p1: "Combino proyectos en solitario con trabajo en equipo dentro de mi experiencia." +
-        " Me interesa especialmente la arquitectura del código tanto como el diseño de juego.",
+    about_title: "La máquina creativa detrás de cada sueño",
+    about_p1: "Combino proyectos en solitario con trabajo en equipo, tanto en mis estudios como en mi experiencia profesional." +
+        " Me interesa tanto la arquitectura del código como el diseño de juego.",
     about_p2: "Cuando no estoy dentro del editor de Unity," +
         " suelo estar pensando en la narrativa de posibles próximos proyectos" +
-        " o investigando como otros juegos usan mecánicas que tengo en mente." +
-        " Me gusta pasar mi tiempo libre dibujando, viendo alguna serie, escuchando algún podcast," +
-        "leyendo o jugando videojuegos en cualquier tipo de plataforma.",
-    about_fact_engine_label: "Lenguajes",
-    about_fact_engine_value: "C#, C++, java",
-    about_fact_lang_label: "Formación",
-    about_fact_lang_value: "Master en diseño y desarrollo de videojuegos," +
-        "Grado superior en diseño de aplicaciones multiplataforma",
-    about_fact_edu_label: "Experiencia laboral",
-    about_fact_edu_value: "6/2023 - 9/2025 como programador junior en ICCA " +
-        "(experiencia en webs en C# con .NET y trato con el cliente)",
+        " o investigando cómo otros juegos usan mecánicas que tengo en mente." +
+        " En mi tiempo libre me gusta dibujar, ver series, escuchar podcasts," +
+        " leer o jugar a videojuegos en cualquier plataforma.",
+    about_fact_lang_label: "Lenguajes",
+    about_fact_lang_value: "C#, C++, Java",
+    about_fact_edu_label: "Formación",
+    about_fact_edu_value: "Máster en diseño y desarrollo de videojuegos, " +
+        "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
+    about_fact_work_label: "Experiencia laboral",
+    about_fact_work_value: "06/2023 – 09/2025: programadora junior en ICCA " +
+        "(desarrollo web en C# con .NET y trato directo con el cliente)",
 
     projects_kicker: "Proyectos",
-    projects_title: "Lo que he construido",
-    projects_lede: "Una selección de proyectos en solitario y equipo.",
+    projects_title: "Sueños hechos juego",
+    projects_lede: "Una selección de proyectos en solitario y en equipo.",
     project_cover_placeholder: "Carátula del juego",
     project_view: "Ver proyecto",
     sort_newest: "Más nuevo primero",
@@ -60,7 +60,7 @@ const dict = {
     contact_title: "Contacta conmigo",
     contact_lede: "o sigue mi trabajo si lo prefieres",
 
-    footer_text: "Hecho con Unity, monster y demasiados Unity Crash Handle Error.",
+    footer_text: "Hecho con Unity, Monster y demasiados «Unity Crash Handler».",
 
     modal_date: "Fecha de creación",
     modal_date_updated: "Última actualización",
@@ -70,6 +70,7 @@ const dict = {
     modal_contribution_solo: "Mecánicas destacadas",
     modal_contribution_team: "Mi aportación",
     modal_try: "Pruébalo",
+    modal_in_dev: "En desarrollo",
     modal_close: "Cerrar",
 
     tag_solo: "En solitario",
@@ -83,23 +84,34 @@ const dict = {
     nav_skills: "Skills",
     nav_contact: "Contact",
 
-    hero_kicker: "Game Developer · Unity",
-    hero_title: 'I build <span class="hero-highlight">playable</span> worlds from Córdoba',
-    hero_lede: "Student and Unity developer. I move between first-person horror and the slow life of a town full of monsters — and I enjoy programming an enemy's AI as much as a pet's affection system.",
+    hero_kicker: "Game developer · Unity",
+    hero_title: 'I turn dreams into <span class="hero-highlight">playable</span> worlds from Córdoba',
+    hero_lede: "Game designer and developer working in Unity." +
+        " I enjoy making WarioWare-style minigames and cozy games," +
+        " but I also like exploring new genres and mechanics outside my comfort zone.",
     btn_projects: "View projects",
-    btn_contact: "Get in touch",
+    btn_contact: "Let's talk",
 
     about_kicker: "About me",
-    about_title: "From the design classroom to the engine's engine room",
-    about_p1: "I combine solo projects with team work throughout my studies. I care about code architecture as much as game design: state machines, decoupled events, and systems a whole team can understand and extend without fear of breaking anything.",
-    about_p2: "When I'm not inside the Unity editor, I'm usually thinking about my next project's narrative or looking at how other games solve a problem I'm currently facing.",
-    about_fact_engine_label: "Engine",
-    about_fact_lang_label: "Language",
+    about_title: "The creative machine behind every dream",
+    about_p1: "I combine solo projects with teamwork, both in my studies and in my professional experience." +
+        " I care as much about code architecture as I do about game design.",
+    about_p2: "When I'm not inside the Unity editor," +
+        " I'm usually thinking about the narrative of possible future projects" +
+        " or researching how other games use mechanics I have in mind." +
+        " In my free time I like to draw, watch series, listen to podcasts," +
+        " read, or play video games on any platform.",
+    about_fact_lang_label: "Languages",
+    about_fact_lang_value: "C#, C++, Java",
     about_fact_edu_label: "Education",
-    about_fact_edu_value: "Game development student",
+    about_fact_edu_value: "Master's in video game design and development, " +
+        "Higher Vocational Degree in Cross-Platform Application Development",
+    about_fact_work_label: "Work experience",
+    about_fact_work_value: "06/2023 – 09/2025: junior programmer at ICCA " +
+        "(web development in C# with .NET and direct client contact)",
 
     projects_kicker: "Projects",
-    projects_title: "What I've built",
+    projects_title: "Dreams turned into games",
     projects_lede: "A selection of solo and team projects.",
     project_cover_placeholder: "Game cover art",
     project_view: "View project",
@@ -121,10 +133,10 @@ const dict = {
     skill_teamwork: "Teamwork",
 
     contact_kicker: "Contact",
-    contact_title: "Want to build something together?",
-    contact_lede: "Open to collaborations, internships and team projects.",
+    contact_title: "Get in touch",
+    contact_lede: "or follow my work if you prefer",
 
-    footer_text: "Made with Unity, coffee and too many open console windows.",
+    footer_text: "Made with Unity, Monster and way too many “Unity Crash Handler” windows.",
 
     modal_date: "Creation date",
     modal_date_updated: "Last updated",
@@ -134,6 +146,7 @@ const dict = {
     modal_contribution_solo: "Notable mechanics",
     modal_contribution_team: "My contribution",
     modal_try: "Try it out",
+    modal_in_dev: "In development",
     modal_close: "Close",
 
     tag_solo: "Solo",
@@ -155,17 +168,21 @@ const dict = {
      carrusel del modal (vídeos .mp4/.webm/.mov o imágenes).
    - mode: "solo" | "team". Si es "solo", el campo "studio" no
      se muestra en el modal (déjalo en null).
+   - link: URL del juego. Si es null, en el modal aparece
+     "En desarrollo" en lugar del botón "Pruébalo".
    - dateCreated / dateUpdated: formato "MM/YYYY".
    - tags: etiquetas propias de este proyecto (además de las
      fijas Unity/C#/gamedev/gamedesign que se añaden solas).
    - es/en: título, rol, descripción corta, descripción larga
      y mecánicas destacadas (o aportación si es en equipo), en
      cada idioma.
+   - Saltos de línea: en longDesc, "\n" crea un párrafo nuevo.
+     En workDesc, cada línea que empiece por "* " se muestra
+     como un elemento de lista.
    ========================================================= */
 const projects = [
     {
       id: "roborunner",
-      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
       cover: "img/roborunner/Roborunner0.png",
       mode: "solo",          // "solo" | "team"
       jam: false,
@@ -185,28 +202,38 @@ const projects = [
       es: {
         title: "Roborunner",
         role: "Diseño y desarrollo",
-        shortDesc: "No dejes que el robot de seguridad te pille.",
+        shortDesc: "No dejes que el guardia de seguridad te pille.",
         longDesc: "En esta aventura endless runner 2D eres H3C10r," +
-            " un robot que fue inventado para entretener y ayudar a la gente en las recreativas," +
+            " un robot creado para entretener y ayudar a la gente en las recreativas," +
             " pero con un defecto: ha adquirido consciencia. El guardia de seguridad hará todo lo posible por atraparlo" +
-            " y llevarlo a desmantelación, así que no le queda otra que correr y huir," +
-            " porque como se detenga un solo instante será su fin.",
-        workDesc: "* Generación dinámica de escenarios \n" +
-            "* Power ups que cambian la jugabilidad \n" +
-            "* Sistema de tienda para comprar mejoras \n" +
+            " y desmantelarlo, así que no le queda más remedio que correr y huir," +
+            " porque como se detenga un solo instante será su fin.\n" +
+            "Arte de personajes y escenarios de Denis Bezmaternykh, arte del HUD de la Asset Store" +
+            " y todo lo demás hecho por mí.",
+        workDesc: "* Generación dinámica de escenarios\n" +
+            "* Power-ups que cambian la jugabilidad\n" +
+            "* Sistema de tienda para comprar mejoras\n" +
             "* Sistema de misiones que recompensan al jugador"
       },
       en: {
         title: "Roborunner",
         role: "Design & development",
-        shortDesc: "2D pixel-art endless runner with a retro look.",
-        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
-        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+        shortDesc: "Don't let the security guard catch you.",
+        longDesc: "In this 2D endless runner adventure you play as H3C10r," +
+            " a robot built to entertain and help people at the arcade," +
+            " but with one flaw: he has become self-aware. The security guard will do everything he can to catch him" +
+            " and dismantle him, so he has no choice but to run and keep running," +
+            " because if he stops for even a moment, it's the end.\n" +
+            "Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store," +
+            " and everything else made by me.",
+        workDesc: "* Dynamic level generation\n" +
+            "* Power-ups that change the gameplay\n" +
+            "* Shop system to buy upgrades\n" +
+            "* Mission system that rewards the player"
       }
     },
     {
       id: "callofpomni",
-      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
       cover: "img/callofpomni/CallofPomni0.png",
       mode: "solo",          // "solo" | "team"
       jam: false,
@@ -226,35 +253,48 @@ const projects = [
       es: {
         title: "Call of Pomni",
         role: "Diseño y desarrollo",
-        shortDesc: "Aguanta las máximas oleadas posibles e intenta volver al circo digital.",
-        longDesc: "Eres Pomni (de la web serie The Amazing Digital Circus) en una nueva misión de Caine." +
-            " En esta misión estás atrapada en un videojuego de zombies y debes avanzar entre las zonas buscando " +
-            "(aunque en vano) el final del juego. \n" +
-            "Con esta premisa disfruta de un shooter por oleadas con distintos tipos de zombies enemigos," +
-            " con zonas que cambian en cada partida, distintos tipos de eventos en cada zona y desbloquea las distintas" +
-            " armas y habilidades para hacer más fácil la misión de avanzar." +
-            " Pero recuerda que si acaban contigo los zombies lo perderás todo y tendrás que empezar desde el principio.",
-        workDesc: "* Sistema de aleatorizado de zonas \n" +
-            "* Sistema de desbloqueo de zonas \n" +
-            "* Sistema de subida de nivel mediante experiencia \n" +
-            "* Distintos tipos de enemigos con distinto comportamientos \n" +
-            "* Distintasa armas y habilidades con distinto comportamiento \n" +
-            "* Máquinas expendedoras que te dan vida y munición \n" +
-            "* Distintos tipos de eventos por zona: oleada, arma, habilidad, supervivientes, monedas, llave \n" +
-            "* Sistema de oleadas \n" +
+        shortDesc: "Sobrevive al mayor número de oleadas posible e intenta volver al circo digital.",
+        longDesc: "Eres Pomni (de la serie web The Amazing Digital Circus) y Caine te ha asignado una nueva misión:" +
+            " estás atrapada en un videojuego de zombis y debes avanzar por sus zonas buscando" +
+            " (aunque en vano) el final del juego.\n" +
+            "Disfruta de un shooter por oleadas con distintos tipos de zombis," +
+            " zonas que cambian en cada partida y diferentes eventos en cada una de ellas." +
+            " Desbloquea armas y habilidades para hacer más llevadero el avance," +
+            " pero recuerda: si los zombis acaban contigo, lo perderás todo y tendrás que empezar desde el principio.",
+        workDesc: "* Sistema de aleatorización de zonas\n" +
+            "* Sistema de desbloqueo de zonas\n" +
+            "* Distintos tipos de eventos por zona: oleada, arma, habilidad, supervivientes, monedas y llave\n" +
+            "* Sistema de oleadas\n" +
+            "* Distintos tipos de enemigos con comportamientos diferenciados\n" +
+            "* Distintas armas y habilidades con comportamientos diferenciados\n" +
+            "* Máquinas expendedoras que recuperan vida y munición\n" +
+            "* Sistema de subida de nivel mediante experiencia\n" +
             "* Sistema de logros"
       },
       en: {
-        title: "Roborunner",
+        title: "Call of Pomni",
         role: "Design & development",
-        shortDesc: "2D pixel-art endless runner with a retro look.",
-        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
-        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+        shortDesc: "Survive as many waves as you can and try to get back to the digital circus.",
+        longDesc: "You are Pomni (from the web series The Amazing Digital Circus) and Caine has given you a new mission:" +
+            " you're trapped inside a zombie video game and must advance through its zones looking for" +
+            " (in vain) the end of the game.\n" +
+            "Enjoy a wave-based shooter with different types of zombies," +
+            " zones that change with every run and different events in each one of them." +
+            " Unlock weapons and abilities to make moving forward easier," +
+            " but remember: if the zombies take you down, you'll lose everything and have to start over from the beginning.",
+        workDesc: "* Zone randomization system\n" +
+            "* Zone unlocking system\n" +
+            "* Different types of events per zone: wave, weapon, ability, survivors, coins and key\n" +
+            "* Wave system\n" +
+            "* Different types of enemies with distinct behaviors\n" +
+            "* Different weapons and abilities with distinct behaviors\n" +
+            "* Vending machines that restore health and ammo\n" +
+            "* Experience-based level-up system\n" +
+            "* Achievement system"
       }
     },
     {
       id: "trespasser",
-      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
       cover: "img/trespasser/Trespasser0.png",
       mode: "solo",          // "solo" | "team"
       jam: false,
@@ -274,37 +314,46 @@ const projects = [
       es: {
         title: "Trespasser",
         role: "Diseño y desarrollo",
-        shortDesc: "Explora el hospital abandonado y consigue las mejores fotos en el proceso.",
-        longDesc: "En esta oscura aventura somos un chaval que como hobby hace urbex y tras consseguir" +
-            " una cámara de fotos antigua estilo Polaroid, decide adentrarse en un hospital abandonado" +
-            " que hay en su ciudad ya que tiene muchas leyendas que dicen que está encantado y quiere " +
-            "intentar captar algo paranormal con la cámara. \n" +
-            "Debes explorar el hosppital usando la cámara para revelar cosas que no se ven a simple vista. " +
-            "Resuelve puzles, consigue información de lo que pasó avanza en la exploración y también..." +
-            " invoca a un ente maligno y escapa de él??",
-        workDesc: "* Sistema de cámara de fotos que captura lo que tienes delante incluyendo lo que está en " +
-            "una capa invisible para el jugador \n" +
-            "* Puzles interactivos \n" +
-            "* IA con sistema de estados: patrulla, alerta, busqueda, ataque \n" +
+        shortDesc: "Explora el hospital abandonado y consigue las mejores fotos por el camino.",
+        longDesc: "En esta oscura aventura eres un chaval aficionado al urbex que, tras conseguir" +
+            " una cámara antigua estilo Polaroid, decide adentrarse en el hospital abandonado" +
+            " de su ciudad. Según muchas leyendas está encantado, y él quiere" +
+            " intentar captar algo paranormal con la cámara.\n" +
+            "Explora el hospital usando la cámara para revelar cosas que no se ven a simple vista." +
+            " Resuelve puzles, descubre lo que ocurrió allí, avanza en la exploración y también..." +
+            " ¿invocar a un ente maligno y escapar de él?",
+        workDesc: "* Sistema de cámara de fotos que captura lo que tienes delante, incluido lo que está en" +
+            " una capa invisible para el jugador\n" +
+            "* Puzles interactivos\n" +
+            "* IA con sistema de estados: patrulla, alerta, búsqueda y ataque\n" +
             "* Sistema de detección del jugador mediante voz"
       },
       en: {
-        title: "Roborunner",
+        title: "Trespasser",
         role: "Design & development",
-        shortDesc: "2D pixel-art endless runner with a retro look.",
-        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
-        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+        shortDesc: "Explore the abandoned hospital and take the best photos along the way.",
+        longDesc: "In this dark adventure you play as a kid who does urbex as a hobby and, after getting" +
+            " an old Polaroid-style camera, decides to venture into the abandoned hospital" +
+            " in his city. According to many legends it's haunted, and he wants to" +
+            " try to capture something paranormal with the camera.\n" +
+            "Explore the hospital using the camera to reveal things that can't be seen at first glance." +
+            " Solve puzzles, find out what happened there, keep exploring and also..." +
+            " summon an evil entity and escape from it?",
+        workDesc: "* Photo camera system that captures what's in front of you, including what's on" +
+            " a layer that is invisible to the player\n" +
+            "* Interactive puzzles\n" +
+            "* State-based AI: patrol, alert, search and attack\n" +
+            "* Voice-based player detection system"
       }
     },
     {
       id: "goodnightmom",
-      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
       cover: "img/goodnightmom/GoodNightMom0.webp",
       mode: "team",          // "solo" | "team"
       jam: true,
       dateCreated: "2/2026",
       dateUpdated: "2/2026",
-      studio: null,           // proyecto en solitario: no se muestra estudio/equipo
+      studio: null,           // sin estudio: no se muestra estudio/equipo
       link: "https://sofia-vanh.itch.io/good-night-mom",
       tags: ["2D", "3D", "Casual", "Minigames"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
@@ -319,29 +368,31 @@ const projects = [
         title: "Good Night Mom",
         role: "Diseño y desarrollo",
         shortDesc: "Juega con tu consola sin que te pille mamá.",
-        longDesc: "Es de madrugada y deberías de estar durmiendo, pero tus ganas de seguir jugando a la consola " +
-            "superan el sueño aunque tu madre no está de acuerdo con eso. Sigue jugando los minijuegos y escondete" +
-            " si aparece mamá para evitar la regañina",
-        workDesc: "* Colaboración en el diseño general del juego \n" +
+        longDesc: "Es de madrugada y deberías estar durmiendo, pero tus ganas de seguir jugando a la consola " +
+            "pueden más que el sueño, aunque tu madre no esté de acuerdo. Sigue jugando a los minijuegos y escóndete" +
+            " si aparece mamá para evitar la regañina.",
+        workDesc: "* Colaboración en el diseño general del juego\n" +
             "* Diseño y desarrollo de los minijuegos"
       },
       en: {
-        title: "Roborunner",
+        title: "Good Night Mom",
         role: "Design & development",
-        shortDesc: "2D pixel-art endless runner with a retro look.",
-        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
-        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+        shortDesc: "Play on your console without getting caught by mom.",
+        longDesc: "It's the middle of the night and you should be sleeping, but your urge to keep playing on your console " +
+            "beats your tiredness, even though your mom doesn't agree. Keep playing the minigames and hide" +
+            " if mom shows up to avoid a scolding.",
+        workDesc: "* Collaboration on the overall game design\n" +
+            "* Design and development of the minigames"
       }
     },
     {
       id: "monsterdiscofever",
-      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
       cover: "img/monsterdiscofever/MonsterDiscoFever0.png",
       mode: "team",          // "solo" | "team"
       jam: true,
       dateCreated: "3/2026",
       dateUpdated: "3/2026",
-      studio: null,           // proyecto en solitario: no se muestra estudio/equipo
+      studio: null,           // sin estudio: no se muestra estudio/equipo
       link: "https://raccoonindiegamedev.itch.io/monster-disco-fever",
       tags: ["2D", "3D", "Casual", "Minigames"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
@@ -355,33 +406,37 @@ const projects = [
       es: {
         title: "Monster Disco Fever",
         role: "Diseño y desarrollo",
-        shortDesc: "Controla que ningún monstruo entre a la discoteca sin permiso.",
-        longDesc: "Acabas de ser contratado como seguridad en una prestigiosa discoteca de mosntruos" +
-            " y debes realizar una serie de pruebas a cada monstruo que quiera entrar. \n" +
-            "Para dejarlos pasar o no deberás comprobar mediante minijuegos su estado de alcoholización, " +
-            "si ha tomado alguna sustancia, si lleva algo sospechoso encima o si " +
-            "simplemente es menor de edad",
-        workDesc: "* Colaboración en el diseño de jugabilidad general \n" +
+        shortDesc: "Controla que ningún monstruo entre en la discoteca sin permiso.",
+        longDesc: "Acabas de ser contratado como seguridad en una prestigiosa discoteca de monstruos" +
+            " y debes hacer una serie de pruebas a cada monstruo que quiera entrar.\n" +
+            "Para decidir si lo dejas pasar o no, tendrás que comprobar mediante minijuegos su nivel de embriaguez," +
+            " si ha consumido alguna sustancia, si lleva algo sospechoso encima o si" +
+            " simplemente es menor de edad.",
+        workDesc: "* Colaboración en el diseño general de la jugabilidad\n" +
             "* Diseño y desarrollo de los distintos minijuegos"
       },
       en: {
-        title: "Roborunner",
+        title: "Monster Disco Fever",
         role: "Design & development",
-        shortDesc: "2D pixel-art endless runner with a retro look.",
-        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
-        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+        shortDesc: "Make sure no monster gets into the disco without permission.",
+        longDesc: "You've just been hired as security at a prestigious monster disco" +
+            " and must run a series of checks on every monster who wants to get in.\n" +
+            "To decide whether or not to let them through, you'll have to use minigames to check how drunk they are," +
+            " whether they've taken any substances, whether they're carrying anything suspicious, or whether" +
+            " they're simply underage.",
+        workDesc: "* Collaboration on the overall gameplay design\n" +
+            "* Design and development of the different minigames"
       }
     },
     {
       id: "therisingodnecromancy",
-      // PLACEHOLDER de ruta: coloca las imágenes/vídeo en img/roborunner/ (ver mensaje del asistente)
       cover: "img/therisingofnecromancy/TheRisingOfNecromancy0.png",
       mode: "team",          // "solo" | "team"
       jam: false,
       dateCreated: "9/2026",
       dateUpdated: "9/2026",
-      studio: "Pinwu Studios",           // proyecto en solitario: no se muestra estudio/equipo
-      link: null,
+      studio: "Pinwu Studios",
+      link: null,             // sin enlace: el modal muestra "En desarrollo"
       tags: ["3D", "Roguelite", "Conquista"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
         "img/therisingofnecromancy/TheRisingOfNecromancyTrailer.mp4",
@@ -394,40 +449,58 @@ const projects = [
       es: {
         title: "The Rising of Necromancy",
         role: "Diseño y desarrollo",
-        shortDesc: "Conquista todo el reino con tu ejercito de no muertos.",
-        longDesc: "En esta aventura eres José José," +
-            " el hijo del mejor herrero del reino que tras proporcionarles las armas y" +
-            " equipamiento necesarios para acabar con el malvado rey nigromante Manuel Jesús," +
-            "enloquecieron matando a tu familia y encarcelandote para evitar tu rebeldia." +
-            " Por cosas del destino acabas en la zelda junto al rey nigromante el cual te " +
-            "convierte en su discípulo pasándote el poco poder que le queda con la narrativa " +
-            "de que si vuelves a juntar todas las partes de su poderoso libro de artes nigromantes," +
-            " él podrá devolverte a tu familia.\n" +
-            "Con esta premisa debemos acabar con las tropas de los héroes para conseguir secuaces" +
-            " que te ayuden a conquistar las diversas partes de las fortalezas de cada héroe" +
-            " para llegar a este y acabar con él consiguiendo una parte del libro hasta juntarlas todas," +
-            " pero sin olvidar que si fallamos en nuestra misión y nos derrotan perderemos nuestro " +
-            "progreso de conquista y deberemos volver empezar." ,
-        
-        workDesc: "* Diseño y creación del Lobby \n" +
-            "* Sistema de inventario del player con slots específicos por tipo de objeto \n" +
-            "* Cofre con inventario \n" +
-            "* Cofre con recompensas \n" +
-            "* Tienda de materiales \n" +
-            "* Sistema de crafteo \n" +
-            "* Estatuas para invocar secuaces \n" +
-            "* Sistema de curación (mediante el rey nigromante y pociones) \n" +
-            "* Manager de escena para tener una escena persistente con pantalla de carga que mantiene el player," +
-            "pool manager y HUD necesario entre escenas \n" +
-            "* Sistema de misiones para los distintos niveles \n" +
-            "* Diseño y desarrollo del tutorial"
+        shortDesc: "Conquista todo el reino con tu ejército de no muertos.",
+        longDesc: "En esta aventura eres José José, el hijo del mejor herrero del reino." +
+            " Tras proporcionar a los héroes las armas y el equipamiento necesarios para acabar con el malvado" +
+            " rey nigromante Manuel Jesús, estos enloquecieron, mataron a tu familia y te encarcelaron para evitar tu rebeldía." +
+            " Por cosas del destino acabas en la celda junto al rey nigromante, que te convierte en su discípulo" +
+            " cediéndote el poco poder que le queda, con la promesa de que si vuelves a reunir todas las partes" +
+            " de su poderoso libro de artes nigrománticas, él podrá devolverte a tu familia.\n" +
+            "Con esta premisa, debes acabar con las tropas de los héroes para conseguir secuaces" +
+            " que te ayuden a conquistar las distintas zonas de la fortaleza de cada héroe," +
+            " llegar hasta él y derrotarlo para obtener una parte del libro, hasta reunirlas todas." +
+            " Eso sí, no olvides que si fallas en tu misión y te derrotan perderás tu" +
+            " progreso de conquista y tendrás que volver a empezar.",
+        workDesc: "* Diseño y creación del lobby\n" +
+            "* Gestor de escenas que mantiene una escena persistente con pantalla de carga," +
+            " conservando entre escenas al jugador, el pool manager y el HUD necesarios\n" +
+            "* Diseño y desarrollo del tutorial\n" +
+            "* Sistema de misiones para los distintos niveles\n" +
+            "* Sistema de inventario del jugador con slots específicos por tipo de objeto\n" +
+            "* Cofre con inventario\n" +
+            "* Cofre con recompensas\n" +
+            "* Tienda de materiales\n" +
+            "* Sistema de crafteo\n" +
+            "* Estatuas para invocar secuaces\n" +
+            "* Sistema de curación (mediante el rey nigromante y pociones)"
       },
       en: {
-        title: "Roborunner",
+        title: "The Rising of Necromancy",
         role: "Design & development",
-        shortDesc: "2D pixel-art endless runner with a retro look.",
-        longDesc: "In this 2D endless runner you play as H3C10r, a robot built to entertain and help people at the arcade — with one flaw: he's become self-aware. The security guard will do everything he can to catch him and send him to be dismantled, so his only option is to run and keep running, because stopping for even a moment means the end. Character and environment art by Denis Bezmaternykh, HUD art from the Asset Store, and everything else made by me.",
-        workDesc: "Dynamic level generation: several pre-built level chunks are chained together randomly but following logic by chunk type (for example, chunk 1.1 can only be followed by chunk 1.2, never by 1.3 or 2.1). Power-ups that change the core gameplay, a shop system to buy upgrades, and a mission system that rewards the player."
+        shortDesc: "Conquer the whole kingdom with your army of the undead.",
+        longDesc: "In this adventure you are José José, the son of the kingdom's best blacksmith." +
+            " After providing the heroes with the weapons and equipment needed to defeat the evil" +
+            " necromancer king Manuel Jesús, they went mad, killed your family and imprisoned you to prevent your rebellion." +
+            " By a twist of fate you end up in the cell next to the necromancer king, who makes you his disciple" +
+            " by passing on the little power he has left, with the promise that if you gather all the parts" +
+            " of his powerful book of necromantic arts again, he will be able to bring your family back.\n" +
+            "With this premise, you must defeat the heroes' troops to gain minions" +
+            " who help you conquer the different areas of each hero's fortress," +
+            " reach the hero and defeat him to obtain a part of the book, until you have them all." +
+            " That said, don't forget that if you fail your mission and are defeated, you'll lose your" +
+            " conquest progress and have to start over.",
+        workDesc: "* Design and creation of the lobby\n" +
+            "* Scene manager that keeps a persistent scene with a loading screen," +
+            " carrying the player, the pool manager and the required HUD across scenes\n" +
+            "* Design and development of the tutorial\n" +
+            "* Mission system for the different levels\n" +
+            "* Player inventory system with specific slots per item type\n" +
+            "* Chest with inventory\n" +
+            "* Chest with rewards\n" +
+            "* Materials shop\n" +
+            "* Crafting system\n" +
+            "* Statues to summon minions\n" +
+            "* Healing system (through the necromancer king and potions)"
       }
     }
   ];
@@ -472,10 +545,10 @@ function applyI18n(lang) {
     if (dict[lang][key] !== undefined) el.setAttribute("aria-label", dict[lang][key]);
   });
 
-  const flags = { es: "🇪🇸", en: "🇬🇧" };
+  const flagImages = { es: "img/general/es.png", en: "img/general/en.png" };
   const langFlagCurrent = document.getElementById("langFlagCurrent");
   const langCodeCurrent = document.getElementById("langCodeCurrent");
-  if (langFlagCurrent) langFlagCurrent.textContent = flags[lang];
+  if (langFlagCurrent) langFlagCurrent.src = flagImages[lang];
   if (langCodeCurrent) langCodeCurrent.textContent = lang.toUpperCase();
 
   document.querySelectorAll("#langMenu li").forEach(li => {
@@ -577,6 +650,35 @@ function closeModal() {
   document.body.style.overflow = "";
 }
 
+/* Convierte un texto con "\n" en párrafos, y las líneas que empiezan
+   por "* " en una lista. Se construye con createElement/textContent,
+   así que el texto nunca se interpreta como HTML. */
+function renderRichText(container, text) {
+  container.innerHTML = "";
+  let list = null;
+
+  String(text || "").split("\n").forEach(rawLine => {
+    const line = rawLine.trim();
+    if (!line) return;
+
+    if (line.startsWith("* ")) {
+      if (!list) {
+        list = document.createElement("ul");
+        list.className = "modal-list";
+        container.appendChild(list);
+      }
+      const li = document.createElement("li");
+      li.textContent = line.slice(2).trim();
+      list.appendChild(li);
+    } else {
+      list = null;
+      const p = document.createElement("p");
+      p.textContent = line;
+      container.appendChild(p);
+    }
+  });
+}
+
 function fillModal(projectId, lang) {
   const project = projects.find(p => p.id === projectId);
   if (!project) return;
@@ -595,11 +697,24 @@ function fillModal(projectId, lang) {
   }
 
   document.getElementById("modalRole").textContent = t.role;
-  document.getElementById("modalLongDesc").textContent = t.longDesc;
-  document.getElementById("modalWorkDesc").textContent = t.workDesc;
+  renderRichText(document.getElementById("modalLongDesc"), t.longDesc);
+  renderRichText(document.getElementById("modalWorkDesc"), t.workDesc);
   document.getElementById("modalWorkLabel").textContent =
     project.mode === "solo" ? dict[lang].modal_contribution_solo : dict[lang].modal_contribution_team;
-  document.getElementById("modalLink").href = project.link;
+
+  const linkEl = document.getElementById("modalLink");
+  if (project.link) {
+    linkEl.href = project.link;
+    linkEl.textContent = dict[lang].modal_try;
+    linkEl.classList.remove("btn-status");
+    linkEl.removeAttribute("aria-disabled");
+  } else {
+    // Sin enlace todavía: se muestra el estado "En desarrollo"
+    linkEl.removeAttribute("href");
+    linkEl.textContent = dict[lang].modal_in_dev;
+    linkEl.classList.add("btn-status");
+    linkEl.setAttribute("aria-disabled", "true");
+  }
 
   document.getElementById("modalTags").innerHTML = buildTagsHtml(project, lang);
 

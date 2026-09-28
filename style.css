@@ -235,7 +235,15 @@ section{ padding: 96px 0; }
 :root[data-theme="light"] .theme-icon-sun{ display: none; }
 :root[data-theme="light"] .theme-icon-moon{ display: block; }
 
-.lang-flag{ font-size: 1.1rem; line-height: 1; }
+/* Icono de bandera (imagen cuadrada reducida a icono pequeño) */
+.lang-flag{
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 4px;
+}
 .lang-caret{
   font-size: 0.7rem;
   color: var(--text);
@@ -412,7 +420,8 @@ section{ padding: 96px 0; }
   align-items: baseline;
 }
 .about-facts strong{
-  min-width: 110px;
+  min-width: 150px;
+  flex-shrink: 0;
   color: var(--accent-text);
   font-weight: 600;
 }
@@ -770,3 +779,18 @@ section{ padding: 96px 0; }
   .tag, .contact-links a{ transition: none; }
   html{ scroll-behavior: auto; }
 }
+
+/* Modal: listas y párrafos generados desde el texto del proyecto */
+.modal-body p{ margin: 0 0 10px; }
+.modal-list{ margin: 0; padding-left: 1.3em; }
+.modal-list li{ margin-bottom: 4px; }
+
+/* Botón sin enlace ("En desarrollo") */
+.btn.btn-status{
+  background: transparent;
+  color: var(--text-soft);
+  border: 2px dashed var(--text-soft);
+  cursor: default;
+  pointer-events: none;
+}
+.btn.btn-status:hover{ transform: none; }

@@ -158,6 +158,24 @@ section{ padding: 96px 0; }
   text-decoration: none;
   color: var(--text);
 }
+.logo-img {
+  height: 70px; /* Ajusta la altura según tus necesidades */
+  width: auto;  /* Mantiene la proporción original */
+}
+/* Ocultar/mostrar según data-theme */
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+[data-theme="dark"] .logo-dark {
+  display: block;
+}
+
+[data-theme="light"] .logo-dark {
+  display: none;
+}
+[data-theme="light"] .logo-light {
+  display: block;
+}
 
 .nav{ display: flex; gap: 28px; }
 .nav a{

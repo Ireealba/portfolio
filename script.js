@@ -10,18 +10,29 @@ const dict = {
 
     hero_kicker: "Desarrolladora de videojuegos · Unity",
     hero_title: 'Construyo mundos <span class="hero-highlight">jugables</span> desde Córdoba',
-    hero_lede: "Estudiante y desarrolladora en Unity. Me muevo entre el terror en primera persona y la vida tranquila de un pueblo lleno de monstruos — y disfruto igual programando la IA de un enemigo que el sistema de cariño de una mascota.",
+    hero_lede: "Diseñadora y desarrolladora de videojuegos en Unity." +
+        " Disfruto haciendo minijuegos estilo WarioWare y juegos cozy," +
+        " pero me gusta explorar géneros y mecánicas nuevos fuera de mi zona de confort.",
     btn_projects: "Ver proyectos",
     btn_contact: "Hablemos",
 
     about_kicker: "Sobre mí",
     about_title: "De clase de diseño a la sala de máquinas del motor",
-    about_p1: "Combino proyectos en solitario con trabajo en equipo dentro de mis estudios. Me interesa especialmente la arquitectura del código tanto como el diseño del juego: máquinas de estados, eventos desacoplados y sistemas que un equipo entero pueda entender y ampliar sin miedo a romper nada.",
-    about_p2: "Cuando no estoy dentro del editor de Unity, suelo estar pensando en la narrativa de mi próximo proyecto o revisando cómo otros juegos resuelven un problema que tengo entre manos.",
-    about_fact_engine_label: "Motor",
-    about_fact_lang_label: "Lenguaje",
-    about_fact_edu_label: "Formación",
-    about_fact_edu_value: "Estudiante de desarrollo de videojuegos",
+    about_p1: "Combino proyectos en solitario con trabajo en equipo dentro de mi experiencia." +
+        " Me interesa especialmente la arquitectura del código tanto como el diseño de juego.",
+    about_p2: "Cuando no estoy dentro del editor de Unity," +
+        " suelo estar pensando en la narrativa de posibles próximos proyectos" +
+        " o investigando como otros juegos usan mecánicas que tengo en mente." +
+        " Me gusta pasar mi tiempo libre dibujando, viendo alguna serie, escuchando algún podcast," +
+        "leyendo o jugando videojuegos en cualquier tipo de plataforma.",
+    about_fact_engine_label: "Lenguajes",
+    about_fact_engine_value: "C#, C++, java",
+    about_fact_lang_label: "Formación",
+    about_fact_lang_value: "Master en diseño y desarrollo de videojuegos," +
+        "Grado superior en diseño de aplicaciones multiplataforma",
+    about_fact_edu_label: "Experiencia laboral",
+    about_fact_edu_value: "6/2023 - 9/2025 como programador junior en ICCA " +
+        "(experiencia en webs en C# con .NET y trato con el cliente)",
 
     projects_kicker: "Proyectos",
     projects_title: "Lo que he construido",

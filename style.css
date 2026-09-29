@@ -866,3 +866,136 @@ section{ padding: 96px 0; }
 @media (max-width: 600px){
   .modal-carousel{ margin: 60px 16px 0; }
 }
+
+/* =========================================================
+   ADAPTACIÓN A MÓVIL Y TABLET
+   (va al final para que sobrescriba las reglas anteriores)
+   ========================================================= */
+
+/* --- Pantallas medianas: sin espacio lateral para las decoraciones grandes --- */
+@media (max-width: 1400px){
+  .deco-1, .deco-2, .deco-3{ display: none; }
+  .deco-4{ width: 80px;  left: 20px;  top: 250px; }
+  .deco-5{ width: 85px;  left: -4px;  top: 190px; }
+  .deco-6{ width: 100px; left: -4px;  top: 340px; }
+  .deco-7{ width: 95px;  left: 150px; top: 345px; }
+}
+
+/* --- Tablet y móvil (una columna) --- */
+@media (max-width: 860px){
+  /* Hero */
+  .hero{ padding-top: 40px; }
+  .foton{
+    width: min(280px, 72vw);
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  .hero-blob{ max-width: 320px; margin-inline: auto; }
+  .hero-grid{ gap: 28px; }
+
+  /* Sobre mí: retrato centrado y decoraciones a su alrededor */
+  .about-portrait{
+    width: min(260px, 100%);
+    margin: 0 auto 130px;      /* deja sitio a las decoraciones que cuelgan por debajo */
+  }
+  .portrait-frame{
+    width: 100%;
+    height: auto;
+    max-width: none;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+    object-fit: cover;
+  }
+  .deco-4{ width: 62px; left: 175px; top: 205px; }
+  .deco-5{ width: 72px; left: -34px; top: 150px; }
+  .deco-6{ width: 90px; left: -16px; top: 265px; }
+  .deco-7{ width: 85px; left: 178px; top: 275px; }
+
+  .about-facts li{ flex-direction: column; gap: 2px; }
+  .about-facts strong{ min-width: 0; }
+
+  /* Proyectos */
+  .project-thumb{ min-height: 0; }
+  .project-thumb img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+  }
+  .project-copy{ padding: 26px 24px 28px; }
+  .project-link-btn{ align-self: stretch; text-align: center; }
+  .project-list{ margin-top: 32px; }
+
+  /* Modal */
+  .modal-overlay{ padding: 12px; }
+  .modal{
+    width: 100%;
+    max-height: 92vh;
+    max-height: 92dvh;
+    border-radius: 22px;
+  }
+  .modal-carousel{ margin: 60px 20px 0; }
+  .carousel-slide{ border-radius: 14px; }
+  .modal-body{ padding: 24px 22px 30px; }
+  .modal-meta{ gap: 14px 22px; }
+  .modal-meta div{ min-width: 120px; }
+  .modal-body .btn{ display: block; text-align: center; }
+}
+
+/* --- Móvil --- */
+@media (max-width: 600px){
+  section{ padding: 56px 0; }
+  .wrap{ padding: 0 20px; }
+
+  /* Cabecera compacta */
+  .header-inner{ padding-top: 8px; padding-bottom: 8px; }
+  .logo-img{ height: 52px; }
+  .header-controls{ gap: 10px; }
+  .lang-dropdown-toggle{ padding: 8px 12px; }
+  .theme-toggle{ width: 40px; height: 40px; }
+  .nav-toggle{ padding: 12px 8px; }               /* zona táctil más grande */
+  .nav{ gap: 4px; padding: 12px 20px 16px; }
+  .nav a{ padding: 12px 0; font-size: 1.05rem; }
+
+  /* Títulos */
+  h1{ font-size: clamp(1.9rem, 8vw, 2.4rem); }
+  h2{ font-size: clamp(1.6rem, 6.5vw, 2rem); }
+  .hero-lede{ font-size: 1rem; }
+
+  /* Botones del hero a todo el ancho */
+  .hero-actions{ flex-direction: column; }
+  .hero-actions .btn{ text-align: center; }
+
+  /* Etiquetas flotantes del hero más pequeñas */
+  .tag{ padding: 5px 12px; font-size: 0.78rem; }
+
+  /* Proyectos */
+  .projects-heading{ align-items: flex-start; flex-direction: column; gap: 12px; }
+  .project-copy{ padding: 22px 20px 26px; }
+  .project-tags li{ font-size: 0.8rem; padding: 4px 12px; }
+
+  /* Contacto */
+  .contact-links{ gap: 12px; flex-direction: column; align-items: stretch; width: 100%; }
+  .contact-links a{ overflow-wrap: anywhere; }
+
+  /* Modal */
+  .modal-overlay{ padding: 8px; }
+  .modal-close{ top: 12px; right: 12px; width: 40px; height: 40px; }
+  .modal-carousel{ margin: 60px 14px 0; padding-bottom: 30px; }
+  .carousel-btn{ width: 34px; height: 34px; top: calc((100% - 30px) / 2); }
+  .carousel-prev{ left: 4px; }
+  .carousel-next{ right: 4px; }
+  .carousel-dots{ bottom: 6px; }
+  .modal-body{ padding: 22px 18px 28px; }
+  .modal-body h2{ font-size: 1.6rem; }
+}
+
+/* --- Móviles muy estrechos --- */
+@media (max-width: 380px){
+  .lang-code{ display: none; }   /* solo bandera + flecha */
+  .about-portrait{ width: min(230px, 100%); }
+  .deco-5{ left: -22px; }
+  .deco-7{ left: 150px; }
+  .deco-4{ left: 150px; }
+}

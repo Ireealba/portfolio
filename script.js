@@ -183,7 +183,7 @@ const dict = {
 const projects = [
     {
       id: "roborunner",
-      cover: "img/roborunner/Roborunner0.png",
+      cover: "img/roborunner/Roborunner0.webp",
       mode: "solo",          // "solo" | "team"
       jam: false,
       dateCreated: "12/2025",
@@ -193,11 +193,15 @@ const projects = [
       tags: ["2D", "Endless runner"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
         "img/roborunner/RoborunnerTrailer.mp4",
-        "img/roborunner/Roborunner1.png",
-        "img/roborunner/Roborunner2.png",
-        "img/roborunner/Roborunner3.png",
-        "img/roborunner/Roborunner4.png",
-        "img/roborunner/Roborunner5.png"
+        "img/roborunner/Roborunner1.webp",
+        "img/roborunner/Roborunner2.webp",
+        "img/roborunner/Roborunner3.webp",
+        "img/roborunner/Roborunner4.webp",
+        "img/roborunner/Roborunner5.webp",
+        "img/roborunner/Roborunner6.webp",
+        "img/roborunner/Roborunner7.webp",
+        "img/roborunner/Roborunner8.webp",
+        "img/roborunner/Roborunner9.webp"
       ],
       es: {
         title: "Roborunner",
@@ -234,7 +238,7 @@ const projects = [
     },
     {
       id: "callofpomni",
-      cover: "img/callofpomni/CallofPomni0.png",
+      cover: "img/callofpomni/CallofPomni0.webp",
       mode: "solo",          // "solo" | "team"
       jam: false,
       dateCreated: "3/2026",
@@ -244,11 +248,12 @@ const projects = [
       tags: ["3D", "Dual Stick Shooter"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
         "img/callofpomni/CallofPomniTrailer.mp4",
-        "img/callofpomni/CallofPomni1.png",
-        "img/callofpomni/CallofPomni2.png",
-        "img/callofpomni/CallofPomni3.png",
-        "img/callofpomni/CallofPomni4.png",
-        "img/callofpomni/CallofPomni5.png"
+        "img/callofpomni/CallofPomni1.webp",
+        "img/callofpomni/CallofPomni2.webp",
+        "img/callofpomni/CallofPomni3.webp",
+        "img/callofpomni/CallofPomni4.webp",
+        "img/callofpomni/CallofPomni5.webp",
+        "img/callofpomni/CallofPomni6.webp"
       ],
       es: {
         title: "Call of Pomni",
@@ -295,7 +300,7 @@ const projects = [
     },
     {
       id: "trespasser",
-      cover: "img/trespasser/Trespasser0.png",
+      cover: "img/trespasser/Trespasser0.webp",
       mode: "solo",          // "solo" | "team"
       jam: false,
       dateCreated: "6/2026",
@@ -305,11 +310,15 @@ const projects = [
       tags: ["3D", "First Person Adventure"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
         "img/trespasser/TrespasserTrailer.mp4",
-        "img/trespasser/Trespasser1.png",
-        "img/trespasser/Trespasser2.png",
-        "img/trespasser/Trespasser3.png",
-        "img/trespasser/Trespasser4.png",
-        "img/trespasser/Trespasser5.png"
+        "img/trespasser/Trespasser1.webp",
+        "img/trespasser/Trespasser2.webp",
+        "img/trespasser/Trespasser3.webp",
+        "img/trespasser/Trespasser4.webp",
+        "img/trespasser/Trespasser5.webp",
+        "img/trespasser/Trespasser6.webp",
+        "img/trespasser/Trespasser7.webp",
+        "img/trespasser/Trespasser8.webp",
+        "img/trespasser/Trespasser9.webp"
       ],
       es: {
         title: "Trespasser",
@@ -358,11 +367,10 @@ const projects = [
       tags: ["2D", "3D", "Casual", "Minigames"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
         "img/goodnightmom/GoodnightMomTrailer.mp4",
-        "img/goodnightmom/GoodnightMom1.png",
-        "img/goodnightmom/GoodnightMom2.png",
-        "img/goodnightmom/GoodnightMom3.png",
-        "img/goodnightmom/GoodnightMom4.png",
-        "img/goodnightmom/GoodnightMom5.png"
+        "img/goodnightmom/GoodnightMom1.webp",
+        "img/goodnightmom/GoodnightMom2.webp",
+        "img/goodnightmom/GoodnightMom3.webp",
+        "img/goodnightmom/GoodnightMom4.webp"
       ],
       es: {
         title: "Good Night Mom",
@@ -387,7 +395,7 @@ const projects = [
     },
     {
       id: "monsterdiscofever",
-      cover: "img/monsterdiscofever/MonsterDiscoFever0.png",
+      cover: "img/monsterdiscofever/MonsterDiscoFever0.webp",
       mode: "team",          // "solo" | "team"
       jam: true,
       dateCreated: "3/2026",
@@ -397,11 +405,9 @@ const projects = [
       tags: ["2D", "3D", "Casual", "Minigames"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
         "img/monsterdiscofever/MonsterDiscoFeverTrailer.mp4",
-        "img/monsterdiscofever/MonsterDiscoFever1.png",
-        "img/monsterdiscofever/MonsterDiscoFever2.png",
-        "img/monsterdiscofever/MonsterDiscoFever3.png",
-        "img/monsterdiscofever/MonsterDiscoFever4.png",
-        "img/monsterdiscofever/MonsterDiscoFever5.png"
+        "img/monsterdiscofever/MonsterDiscoFever1.webp",
+        "img/monsterdiscofever/MonsterDiscoFever2.webp",
+        "img/monsterdiscofever/MonsterDiscoFever3.webp"
       ],
       es: {
         title: "Monster Disco Fever",
@@ -430,7 +436,7 @@ const projects = [
     },
     {
       id: "therisingodnecromancy",
-      cover: "img/therisingofnecromancy/TheRisingOfNecromancy0.png",
+      cover: "img/therisingofnecromancy/TheRisingOfNecromancy0.webp",
       mode: "team",          // "solo" | "team"
       jam: false,
       dateCreated: "9/2026",
@@ -440,11 +446,15 @@ const projects = [
       tags: ["3D", "Roguelite", "Conquista"], // etiquetas propias del proyecto, además de las fijas
       gallery: [
         "img/therisingofnecromancy/TheRisingOfNecromancyTrailer.mp4",
-        "img/therisingofnecromancy/TheRisingOfNecromancy1.png",
-        "img/therisingofnecromancy/TheRisingOfNecromancy2.png",
-        "img/therisingofnecromancy/TheRisingOfNecromancy3.png",
-        "img/therisingofnecromancy/TheRisingOfNecromancy4.png",
-        "img/therisingofnecromancy/TheRisingOfNecromancy5.png"
+        "img/therisingofnecromancy/TheRisingOfNecromancyVid1.mp4",
+        "img/therisingofnecromancy/TheRisingOfNecromancy1.webp",
+        "img/therisingofnecromancy/TheRisingOfNecromancy2.webp",
+        "img/therisingofnecromancy/TheRisingOfNecromancy3.webp",
+        "img/therisingofnecromancy/TheRisingOfNecromancy4.webp",
+        "img/therisingofnecromancy/TheRisingOfNecromancy5.webp",
+        "img/therisingofnecromancy/TheRisingOfNecromancy6.webp",
+        "img/therisingofnecromancy/TheRisingOfNecromancy7.webp",
+        "img/therisingofnecromancy/TheRisingOfNecromancy8.webp"
       ],
       es: {
         title: "The Rising of Necromancy",
@@ -545,7 +555,7 @@ function applyI18n(lang) {
     if (dict[lang][key] !== undefined) el.setAttribute("aria-label", dict[lang][key]);
   });
 
-  const flagImages = { es: "img/general/es.png", en: "img/general/en.png" };
+  const flagImages = { es: "img/general/es.webp", en: "img/general/en.webp" };
   const langFlagCurrent = document.getElementById("langFlagCurrent");
   const langCodeCurrent = document.getElementById("langCodeCurrent");
   if (langFlagCurrent) langFlagCurrent.src = flagImages[lang];
@@ -645,6 +655,7 @@ function openModal(projectId) {
 }
 
 function closeModal() {
+  pauseCarouselVideos();
   modalOverlay.hidden = true;
   openProjectId = null;
   document.body.style.overflow = "";
@@ -755,8 +766,17 @@ function renderCarousel(project, lang) {
   updateCarouselPosition();
 }
 
+/* Pausa todos los vídeos del carrusel, salvo el de la diapositiva "exceptIndex" (si se indica) */
+function pauseCarouselVideos(exceptIndex = -1) {
+  Array.from(carouselTrack.children).forEach((slide, i) => {
+    if (i === exceptIndex) return;
+    slide.querySelectorAll("video").forEach(video => video.pause());
+  });
+}
+
 function updateCarouselPosition() {
   carouselTrack.style.transform = `translateX(-${currentCarouselIndex * 100}%)`;
+  pauseCarouselVideos(currentCarouselIndex);
   carouselDots.querySelectorAll("span").forEach((dot, i) => {
     dot.classList.toggle("active", i === currentCarouselIndex);
   });

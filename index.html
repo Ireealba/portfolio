@@ -30,8 +30,8 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="#inicio" class="logo">
-      <img src="img/general/Logo_dark.png" alt="Iree" class="logo-img logo-dark">
-      <img src="img/general/Logo_light.png" alt="Iree" class="logo-img logo-light">
+      <img src="img/general/Logo_dark.webp" alt="Iree" class="logo-img logo-dark">
+      <img src="img/general/Logo_light.webp" alt="Iree" class="logo-img logo-light">
     </a>
     <nav class="nav" id="nav">
       <a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a>
@@ -42,16 +42,16 @@
     <div class="header-controls">
       <div class="lang-dropdown" id="langDropdown">
         <button type="button" class="lang-dropdown-toggle" id="langToggle" aria-haspopup="listbox" aria-expanded="false">
-          <img class="lang-flag" id="langFlagCurrent" src="img/general/es.png" alt="" width="20" height="20">
+          <img class="lang-flag" id="langFlagCurrent" src="img/general/es.webp" alt="" width="20" height="20">
           <span class="lang-code" id="langCodeCurrent">ES</span>
           <span class="lang-caret" aria-hidden="true">▾</span>
         </button>
         <ul class="lang-menu" id="langMenu" role="listbox" hidden>
           <li role="option" data-lang="es" aria-selected="true">
-            <img class="lang-flag" src="img/general/es.png" alt="" width="20" height="20"> Español
+            <img class="lang-flag" src="img/general/es.webp" alt="" width="20" height="20"> Español
           </li>
           <li role="option" data-lang="en" aria-selected="false">
-            <img class="lang-flag" src="img/general/en.png" alt="" width="20" height="20"> English
+            <img class="lang-flag" src="img/general/en.webp" alt="" width="20" height="20"> English
           </li>
         </ul>
       </div>
@@ -87,7 +87,7 @@
       </div>
 
       <div class="hero-art hero-blob" aria-hidden="true">
-        <img class="foton" src="img/general/Portfolioretrato.png" alt="Foton-de-mi-persona">
+        <img class="foton" src="img/general/Portfolioretrato.webp" alt="Foton-de-mi-persona">
         <span class="tag tag-1">C#</span>
         <span class="tag tag-2">Unity 3D</span>
         <span class="tag tag-3">Unity 2D</span>
@@ -97,9 +97,18 @@
 
   <!-- SOBRE MÍ -->
   <section id="sobre-mi" class="about">
+    <!-- Decoración lateral derecha (1, 2, 3) -->
+    <img class="deco deco-1 theme-dark" src="img/general/Steam_dark.webp" alt="" aria-hidden="true"><img class="deco deco-1 theme-light" src="img/general/Steam_light.webp" alt="" aria-hidden="true">
+    <img class="deco deco-2" src="img/general/Switch.webp" alt="" aria-hidden="true">
+    <img class="deco deco-3 theme-dark" src="img/general/Ps_dark.webp" alt="" aria-hidden="true"><img class="deco deco-3 theme-light" src="img/general/Ps_light.webp" alt="" aria-hidden="true">
     <div class="wrap about-grid">
       <div class="about-portrait" aria-hidden="true">
-        <img class="portrait-frame" src="img/general/Autofoto.png" alt="Foton-de-mi-persona">
+        <img class="portrait-frame" src="img/general/Autofoto.webp" alt="Foton-de-mi-persona">
+        <!-- Decoración del retrato (4, 5, 6, 7) -->
+        <img class="deco deco-4" src="img/general/Heart.webp" alt="" aria-hidden="true">
+        <img class="deco deco-5 theme-dark" src="img/general/Stardew_dark.webp" alt="" aria-hidden="true"><img class="deco deco-5 theme-light" src="img/general/Stardew_light.webp" alt="" aria-hidden="true">
+        <img class="deco deco-6" src="img/general/Miku.webp" alt="" aria-hidden="true">
+        <img class="deco deco-7 theme-dark" src="img/general/Ape_dark.webp" alt="" aria-hidden="true"><img class="deco deco-7 theme-light" src="img/general/Ape_light.webp" alt="" aria-hidden="true">
       </div>
       <div class="about-copy">
         <p class="section-kicker" data-i18n="about_kicker">Sobre mí</p>
@@ -207,9 +216,9 @@
     <button class="modal-close" id="modalClose" data-i18n-aria="modal_close" aria-label="Cerrar">×</button>
 
     <div class="modal-carousel" id="modalCarousel">
-      <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior">‹</button>
+      <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior"><img src="img/general/Arrow_left.webp" alt="" draggable="false"></button>
       <div class="carousel-track" id="carouselTrack"></div>
-      <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Siguiente">›</button>
+      <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Siguiente"><img src="img/general/Arrow_right.webp" alt="" draggable="false"></button>
       <div class="carousel-dots" id="carouselDots"></div>
     </div>
 

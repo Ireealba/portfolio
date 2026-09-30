@@ -17,7 +17,8 @@ const dict = {
     btn_contact: "Hablemos",
 
     about_kicker: "Sobre mí",
-    about_title: "La máquina creativa detrás de cada sueño",
+    about_title: "Iree Alba",
+    about_title2: "Indie Gamedev Raccoon",
     about_p1: "Combino proyectos en solitario con trabajo en equipo, tanto en mis estudios como en mi experiencia profesional." +
         " Me interesa tanto la arquitectura del código como el diseño de juego.",
     about_p2: "Cuando no estoy dentro del editor de Unity," +
@@ -93,7 +94,8 @@ const dict = {
     btn_contact: "Let's talk",
 
     about_kicker: "About me",
-    about_title: "The creative machine behind every dream",
+    about_title: "Iree Alba",
+    about_title2: "Indie Gamedev Raccoon",
     about_p1: "I combine solo projects with teamwork, both in my studies and in my professional experience." +
         " I care as much about code architecture as I do about game design.",
     about_p2: "When I'm not inside the Unity editor," +
